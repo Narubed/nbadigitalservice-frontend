@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-param-reassign */
 import { Fragment, useState, useEffect } from 'react';
@@ -16,7 +17,7 @@ import Grow from '@mui/material/Grow';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import MuiLink from '@mui/material/Link';
-
+import { purple, grey } from '@mui/material/colors';
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
 import MKTypography from '../../../components/MKTypography';
@@ -26,6 +27,8 @@ import MKButton from '../../../components/MKButton';
 import DefaultNavbarDropdown from './DefaultNavbarDropdown';
 import DefaultNavbarMobile from './DefaultNavbarMobile';
 
+// image
+import logoNBA from '../../../assets/images/NBAService/logo/logonba.png';
 // Material Kit 2 React base styles
 import breakpoints from '../../../assets/theme/base/breakpoints';
 
@@ -148,8 +151,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                           transition: 'all 300ms linear',
 
                           '&:hover': {
-                            backgroundColor: grey[200],
-                            color: dark.main
+                            backgroundColor: purple[300],
+                            color: grey[50]
                           }
                         })}
                       >
@@ -249,14 +252,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             ) : (
               item.name
             )}
-            {item.collapse && (
-              <Icon
-                fontSize="small"
-                sx={{ fontWeight: 'normal', verticalAlign: 'middle', mr: -0.5 }}
-              >
-                keyboard_arrow_right
-              </Icon>
-            )}
+            {item.collapse && <Icon icon="bxs:right-arrow" />}
           </MKTypography>
         );
       });
@@ -463,7 +459,9 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
             <MKTypography variant="button" fontWeight="bold" color={light ? 'white' : 'dark'}>
-              {brand}
+              <div style={{ width: '70px' }}>
+                <img src={logoNBA} style={{ width: '100%', height: '100%' }} />
+              </div>
             </MKTypography>
           </MKBox>
           <MKBox

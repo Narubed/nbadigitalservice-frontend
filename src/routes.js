@@ -22,9 +22,8 @@ import NinjaVan from './layouts/pages/shipping-company/ninjavan';
 import DHL from './layouts/pages/shipping-company/dhl';
 import Best from './layouts/pages/shipping-company/best';
 import SCG from './layouts/pages/shipping-company/scg';
-import True from './layouts/pages/shipping-company/true';
-import Deliveree from './layouts/pages/shipping-company/deliveree';
-
+import SCGCool from './layouts/pages/shipping-company/scgcool';
+import LazadaDOF from './layouts/pages/shipping-company/lazadadof';
 // Sections
 import PageHeaders from './layouts/sections/page-sections/page-headers';
 import Features from './layouts/sections/page-sections/featuers';
@@ -50,6 +49,12 @@ import RegionCentral from './layouts/pages/region/region-central';
 import RegionNorthern from './layouts/pages/region/region-northern';
 import RegionEastern from './layouts/pages/region/region-eastern';
 import RegionSouthern from './layouts/pages/region/region-southern';
+
+// News
+import News from './layouts/pages/news';
+
+// download
+import Download from './layouts/pages/download';
 
 const routes = [
   {
@@ -107,14 +112,14 @@ const routes = [
             component: <SCG />
           },
           {
-            name: 'True e-Logistics Thailand',
-            route: '/pages/shipping-company/true',
-            component: <True />
+            name: 'SCG Express Cool Thailand',
+            route: '/pages/shipping-company/scgcoll',
+            component: <SCGCool />
           },
           {
-            name: 'Deliveree Thailand',
-            route: '/pages/shipping-company/deliveree',
-            component: <Deliveree />
+            name: 'Drop Off Lazada Thailand',
+            route: '/pages/shipping-company/lazadaDOF',
+            component: <LazadaDOF />
           }
         ]
       }
@@ -123,14 +128,25 @@ const routes = [
   {
     name: 'บริการ',
     icon: <HomeRepairServiceIcon />,
-    route: '/pages/landing-pages/service',
-    component: <Service />
-  },
-  {
-    name: 'รูปแบบการลงทุน',
-    icon: <Icon icon="emojione:card-file-box" />,
-    route: '/pages/landing-pages/investment',
-    component: <Investment />
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
+      {
+        name: 'Service',
+        collapse: [
+          {
+            name: 'บริการของบริษัท',
+            route: '/pages/landing-pages/service',
+            component: <Service />
+          },
+          {
+            name: 'รูปแบบการลงทุน',
+            route: '/pages/landing-pages/investment',
+            component: <Investment />
+          }
+        ]
+      }
+    ]
   },
   {
     name: 'ตัวแทนศูนย์',
@@ -176,10 +192,32 @@ const routes = [
     ]
   },
   {
-    name: 'คำถามที่พบบ่อย',
+    name: 'ช่วยเหลือ',
     icon: <Icon icon="emojione:exclamation-question-mark" />,
-    route: '/pages/landing-pages/blog',
-    component: <Blog />
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
+      {
+        name: 'Additional Services',
+        collapse: [
+          {
+            name: 'บล๊อกข่าวสาร',
+            route: '/pages/news',
+            component: <News />
+          },
+          {
+            name: 'คำถามที่พบบ่อย',
+            route: '/pages/landing-pages/blog',
+            component: <Blog />
+          },
+          {
+            name: 'Download',
+            route: '/sections/download/teamview',
+            component: <Download />
+          }
+        ]
+      }
+    ]
   }
 
   // {

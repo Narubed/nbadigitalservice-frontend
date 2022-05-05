@@ -24,38 +24,7 @@ import MKButton from '../../../../components/MKButton';
 // import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function RotatingCardFront({ color, image, icon, title, description }) {
-  return (
-    <MKBox
-      display="flex"
-      justifyContent="center"
-      alignContent="center"
-      borderRadius="lg"
-      coloredShadow={color}
-      width="100%"
-      position="relative"
-      zIndex={2}
-      sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba } }) =>
-          `${linearGradient(rgba(purple[500], 0.15), rgba(purple[500], 0.45))}, url(${image})`,
-        backgroundSize: 'cover',
-        backfaceVisibility: 'hidden'
-      }}
-    >
-      <MKBox py={12} px={3} textAlign="center" lineHeight={1}>
-        {icon && (
-          <MKTypography variant="h2" color="white" my={2}>
-            {/* <Icon icon="cil:touch-app" /> */}
-          </MKTypography>
-        )}
-        <MKTypography variant="h3" color="white" gutterBottom>
-          {title}
-        </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
-          {description}
-        </MKTypography>
-      </MKBox>
-    </MKBox>
-  );
+  return <MKBox borderRadius="5%" component="img" src={image} alt={title} width="100%" my="auto" />;
 }
 
 function RotatingCardBack({ color, image, title, description, action }) {
@@ -127,15 +96,15 @@ function Information() {
     <Container>
       <RotatingCard>
         <RotatingCardFront
-          image={require('../../../../assets/images/NBAService/NBA2.jpg').default}
+          image={require('../../../../assets/images/NBAService/logo/nba2.png').default}
           icon="touch_app"
           title={<>E-Branch</>}
           description="สำหรับตัวแทนศูนย์ชุมชน."
         />
         <RotatingCardBack
-          image={require('../../../../assets/images/NBAService/NBA2.jpg').default}
+          image={require('../../../../assets/images/NBAService/logo/nba2.png').default}
           title="E-Branch"
-          description="สำหรับตัวเเทนศูนย์ เป็นโปรเเกรมที่บริษัทจัดทำขึ้นเพื่อศูนย์ตัวเเทน."
+          description="เป็นโปรเเกรมสำหรับตัวเเทนศูนย์."
           action={{
             type: 'internal',
             route: 'https://e-branch2.nbadigitalworlds.com/',

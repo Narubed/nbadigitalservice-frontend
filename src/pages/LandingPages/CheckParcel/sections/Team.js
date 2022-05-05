@@ -34,6 +34,8 @@ import True from '../../../../assets/images/NBAService/parcel/True.jpg';
 import BestExpress from '../../../../assets/images/NBAService/parcel/BestExpress.png';
 import Deliveree from '../../../../assets/images/NBAService/parcel/Deliveree.png';
 import Ninjavan from '../../../../assets/images/NBAService/parcel/Ninjavan.png';
+import SCGCool from '../../../../assets/images/NBAService/parcel/SCGCool.jpg';
+import Lazada from '../../../../assets/images/NBAService/parcel/Lazada.jpg';
 
 function Team() {
   return (
@@ -141,22 +143,25 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                linkWeb="https://store.truecorp.co.th/tracking"
-                image={True}
-                name="True e-Logistics"
-                position={{ color: 'info', label: 'บริษัท ทรูโลจิสติกส์ จำกัด' }}
-                description=" ให้บริการขนส่งพัสดุภายในประเทศจัดส่งพัสดุถึงปลายทางภายใน 1 วัน พร้อมบริการเข้ารับพัสดุถึงบ้าน และบริการเก็บเงินปลายทาง ใช้บริการได้ที่สาขาเอ็นบีเอ ได้ทุกสาขา."
+                linkWeb="https://www.scgexpress.co.th/tracking/"
+                image={SCGCool}
+                name="SCG CHILLED & FROZEN PARCEL"
+                position={{ color: 'info', label: 'บริษัท เอสซีจี เอ็กซ์เพรส จำกัด' }}
+                description=" การขนส่งสินค้าแบบแช่เย็น หรือแช่แข็ง SCG EXPRESS
+                          มีบริการขนส่งสินค้าสำหรับพัสดุที่ต้องควบคุมอุณหภูมิ เช่น ของสด อาหารทะเล
+                          ผลไม้."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                linkWeb="https://www.deliveree.com/th/safe-cargo-delivery-service/"
-                image={Deliveree}
-                name="Deliveree"
-                position={{ color: 'info', label: 'บริษัท เดลิเวอรี (ไทยแลนด์) จำกัด' }}
-                description="ให้บริการส่งของ 2 รูปแบบ คือแบบเหมาคันและแบบรายชิ้น โดยคุณสามารถเลือกบริการที่ต้องการใช้ในขั้นตอนที่หนึ่งของการจอง."
+                linkWeb="https://www.lazada.co.th/helpcenter/how-do-i-track-my-order-status-6074.html"
+                image={Lazada}
+                name="Lazada Drop-Off"
+                position={{ color: 'info', label: 'บริษัท ลาซาด้า จำกัด' }}
+                description="เป็นผู้ให้บริการเว็บไซต์ช้อปปิ้งออนไลน์สินค้าราคาถูก
+                        โดยมีสินค้าให้เลือกซื้อหลายสิบกลุ่มใหญ่ และแยกย่อยอีกหลายร้อยหมวดหมู่ย่อย."
               />
             </MKBox>
           </Grid>

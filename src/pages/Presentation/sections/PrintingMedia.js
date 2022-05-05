@@ -16,7 +16,7 @@ function PrintingMedia() {
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: 'auto' }}>
           <Grid item xs={12} lg={8} sx={{ ml: 'auto' }}>
             <Image
-              src={require('../../../assets/images/NBAService/printmedia1.jpg').default}
+              src={require('../../../assets/images/NBAService/printmedia2.png').default}
               rounded={false}
               raised
               alt="Raised Image"
@@ -24,7 +24,7 @@ function PrintingMedia() {
           </Grid>
           <Grid item xs={12} lg={4} sx={{ mx: 'auto' }}>
             <DefaultInfoCard
-              title="รับออกแบบและ จัดทำสื่อสิ่งพิมพ์ทุกประเภท"
+              title="รับออกแบบและ จัดทำสื่อสิ่งพิมพ์"
               description="Design and produce all types of print media."
             />
           </Grid>

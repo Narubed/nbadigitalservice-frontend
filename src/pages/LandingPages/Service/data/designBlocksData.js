@@ -25,6 +25,18 @@ import True from '../../../../assets/images/NBAService/parcel/True.jpg';
 import BestExpress from '../../../../assets/images/NBAService/parcel/BestExpress.png';
 import Deliveree from '../../../../assets/images/NBAService/parcel/Deliveree.png';
 import Ninjavan from '../../../../assets/images/NBAService/parcel/Ninjavan.png';
+import SCGCool from '../../../../assets/images/NBAService/parcel/SCGCool.jpg';
+import Lazada from '../../../../assets/images/NBAService/parcel/Lazada.jpg';
+
+import AC01 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-01.png';
+import AC02 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-02.png';
+import AC03 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-03.png';
+import AC04 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-04.png';
+import AC05 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-05.png';
+import AC06 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-06.png';
+import AC07 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-07.png';
+import AC08 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-08.png';
+import AC09 from '../../../../assets/images/NBAService/service/400x400px-บัญชี-09.png';
 
 export default [
   {
@@ -205,17 +217,78 @@ export default [
           'มุ่งเน้นการให้บริการขนส่งพัสดุด่วน ทั้งแบบทั่วไปและพัสดุประเภทอาหารที่ต้องการการควบคุมอุณหภูมิเป็นพิเศษ ใช้บริการได้ที่สาขาเอ็นบีเอ ได้ทุกสาขาทั่วประเทศ.'
       },
       {
-        image: True,
+        image: SCGCool,
         count: 1,
         detail:
-          'ให้บริการขนส่งพัสดุภายในประเทศจัดส่งพัสดุถึงปลายทางภายใน 1 วัน พร้อมบริการเข้ารับพัสดุถึงบ้าน และบริการเก็บเงินปลายทาง ใช้บริการได้ที่สาขาเอ็นบีเอ ได้ทุกสาขา.'
+          'การขนส่งสินค้าแบบแช่เย็น หรือแช่แข็ง SCG EXPRESS มีบริการขนส่งสินค้าสำหรับพัสดุที่ต้องควบคุมอุณหภูมิ เช่น ของสด อาหารทะเล ผลไม้.'
       },
 
       {
-        image: Deliveree,
+        image: Lazada,
         count: 10,
         detail:
-          'ให้บริการส่งของ 2 รูปแบบ คือแบบเหมาคันและแบบรายชิ้น โดยคุณสามารถเลือกบริการที่ต้องการใช้ในขั้นตอนที่หนึ่งของการจอง.'
+          'เป็นผู้ให้บริการเว็บไซต์ช้อปปิ้งออนไลน์สินค้าราคาถูก โดยมีสินค้าให้เลือกซื้อหลายสิบกลุ่มใหญ่ และแยกย่อยอีกหลายร้อยหมวดหมู่ย่อย.'
+      }
+    ]
+  },
+  {
+    title: 'บริการด้านการเงิน บัญชี และภาษี',
+    description: 'Financial, accounting and tax services',
+    items: [
+      {
+        image: AC01,
+        count: 5,
+        pro: true,
+        detail:
+          'รวบรวมและจัดเก็บเอกสารพร้อมทั้งบันทึกบัญชีรายวันซื้อ, รายวันขาย, รายวันรับ, รายวันจ่าย, รายวันทั่วไป, ลูกหนี้, เจ้าหนี้, บัญชีแยกประเภท โดยจัดเป็นชุด และจัดเก็บเป็นรายเดือน.'
+      },
+      {
+        image: AC02,
+        count: 6,
+        detail:
+          'การจดทะเบียนบริษัท  การจดทะเบียนห้างหุ้นส่วนจำกัด การจดทะเบียนจัดตั้ง การเปิดบริษัท การเปิดห้างหุ้นส่วนจำกัด คือการเริ่มต้นดำเนินธุรกิจในรูปแบบของนิติบุคคล.'
+      },
+      {
+        image: AC03,
+        count: 3,
+        detail:
+          'ภาษีมูลค่าเพิ่มเป็นภาษีที่เรียกเก็บจากการขายสินค้าและบริการ โดยเก็บในอัตรา 7% ของมูลค่าขายสินค้าหรือบริการในประเทศ และอัตรา 0% ในกรณีที่เป็นการส่งออก.'
+      },
+      {
+        image: AC04,
+        count: 11,
+        detail:
+          'การดูแลพนักงานให้ได้รับสิทธิพื้นฐานตามกฏหมายเป็นหนึ่งในหน้าที่สำคัญของ HR ซึ่งจำเป็นจะต้องปฏิบัติตามอย่างเคร่งครัด.'
+      },
+      {
+        image: AC05,
+        count: 8,
+        pro: true,
+        detail:
+          'นายจ้างที่มีลูกจ้างตั้งแต่ 1 คนขึ้นไป มีหน้าที่ขึ้นทะเบียนนายจ้างและขึ้นทะเบียนลูกจ้างภายใน 30 วัน นับตั้งแต่มีการจ้างงาน.'
+      },
+      {
+        image: AC06,
+        count: 9,
+        detail: 'บริการยื่นงบการเงินต่าง ๆ รวมถึงการตรวจสอบบัญชี.'
+      },
+
+      {
+        image: AC07,
+        count: 7,
+        detail:
+          'ทางบริษัทมีเเนวทาง การออกแบบขั้นตอนการจัดการด้านบัญชีให้เหมาะกับโครงสร้างและขนาดของบริษัท.'
+      },
+      {
+        image: AC08,
+        count: 1,
+        detail: 'รับปรึกษาการยื่นจดทะเบียนเครื่องหมายการค้า รวมถึงการจัดเตรียมเอกสารหลักฐานต่าง ๆ.'
+      },
+
+      {
+        image: AC09,
+        count: 10,
+        detail: 'รับยื่นเอกสาร จะทะเบียนขออนุญาตจำหน่ายสุรา ยาสูบ.'
       }
     ]
   }

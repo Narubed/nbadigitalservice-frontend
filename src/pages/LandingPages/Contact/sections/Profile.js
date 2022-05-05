@@ -9,7 +9,7 @@ import MKAvatar from '../../../../components/MKAvatar';
 import MKTypography from '../../../../components/MKTypography';
 import MKButton from '../../../../components/MKButton';
 // Images
-import profilePicture from '../../../../assets/images/NBAService/NBA2.jpg';
+import profilePicture from '../../../../assets/images/NBAService/logo/nba.png';
 
 function Profile() {
   return (

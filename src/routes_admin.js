@@ -7,6 +7,8 @@ import ChangeAdmin from './layouts/pages/admin/change-admin';
 import AdminCreateRepresentative from './layouts/pages/admin/admin-create-representative';
 import AdminEditRepresentativePage from './layouts/pages/admin/admin-edit-representative';
 import CreateAdmin from './layouts/pages/admin/create-admin';
+import AdminNews from './layouts/pages/admin/admin-news';
+import AdminCreateNews from './layouts/pages/admin/admin-create-news';
 
 const routes = [
   {
@@ -24,6 +26,16 @@ const routes = [
   {
     route: '/pages/admin/create-admin',
     component: <CreateAdmin />
+  },
+  {
+    route: '/pages/admin/create-news',
+    component: <AdminCreateNews />
+  },
+  {
+    name: 'จัดการข่าวสาร',
+    icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
+    route: '/pages/admin/admin-news',
+    component: <AdminNews />
   },
   {
     name: 'ราคาขนส่ง',

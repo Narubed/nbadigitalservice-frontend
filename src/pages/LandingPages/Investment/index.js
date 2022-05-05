@@ -6,6 +6,8 @@ import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
+
 import { Masonry } from '@mui/lab';
 import H5 from '@material-tailwind/react/Heading5';
 import { Icon } from '@iconify/react';
@@ -23,6 +25,8 @@ import bgImage from '../../../assets/images/NBAService/NBA.jpg';
 import IMG14999 from '../../../assets/images/NBAService/investment/14999.jpg';
 import IMG17499 from '../../../assets/images/NBAService/investment/17499.jpg';
 import IMG19999 from '../../../assets/images/NBAService/investment/19999.jpg';
+import IMG200000 from '../../../assets/images/NBAService/investment/200000.jpg';
+import IMG300000 from '../../../assets/images/NBAService/investment/300000.jpg';
 
 function ContactUs() {
   return (
@@ -124,35 +128,39 @@ function ContactUs() {
       <br />
       <br />
       <br />
-
-      <Box sx={{ width: '100%', minHeight: '100%', pr: '3%', pl: '3%' }}>
-        <Masonry columns={2} spacing={2}>
-          <Paper xs={12} lg={6}>
+      <MKBox textAlign="center">
+        <MKTypography variant="h3" mt={6} mb={3}>
+          รูปแบบการลงทุนสำหรับ บุคคลทั่วไป
+        </MKTypography>
+      </MKBox>
+      <MKBox component="section" py={3}>
+        <Grid container item xs={12} lg={12} sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
+          <Grid item pb={2} xs={12} md={4} display="flex" sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
             <Image src={IMG14999} rounded={false} raised alt="Raised Image" />
-          </Paper>
-          <Paper xs={12} lg={6}>
+          </Grid>
+          <Grid item pb={2} xs={12} md={4} display="flex" sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
             <Image src={IMG17499} rounded={false} raised alt="Raised Image" />
-          </Paper>
-        </Masonry>
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          p: 1,
-          m: 1,
-          bgcolor: 'background.paper',
-          borderRadius: 1
-        }}
-      >
-        <Box sx={{ width: '50%', minHeight: '50%' }}>
-          <Masonry columns={1} spacing={1}>
-            <Paper sx={{ width: '50%', minHeight: '50%' }} pr="26%" pl="26%">
-              <Image src={IMG19999} rounded={false} raised alt="Raised Image" />
-            </Paper>
-          </Masonry>
-        </Box>
-      </Box>
+          </Grid>
+          <Grid item pb={2} xs={12} md={4} display="flex" sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
+            <Image src={IMG19999} rounded={false} raised alt="Raised Image" />
+          </Grid>
+        </Grid>
+      </MKBox>
+      <MKBox textAlign="center">
+        <MKTypography variant="h3" mt={6} mb={3}>
+          รูปแบบการลงทุนสำหรับ ผู้บริหารศูนย์
+        </MKTypography>
+      </MKBox>
+      <MKBox component="section" py={3}>
+        <Grid container item xs={12} lg={12} sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
+          <Grid item pb={2} xs={12} md={6} display="flex" sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
+            <Image src={IMG200000} rounded={false} raised alt="Raised Image" />
+          </Grid>
+          <Grid item pb={2} xs={12} md={6} display="flex" sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
+            <Image src={IMG300000} rounded={false} raised alt="Raised Image" />
+          </Grid>
+        </Grid>
+      </MKBox>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

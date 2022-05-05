@@ -58,7 +58,7 @@ function AboutUs() {
                 }
               })}
             >
-              สร้างโพสเเต่ละระดับใหม่
+              สร้างโพสข่าวสารใหม่
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               สำหรับผู้ดูแลระบบ NBA Digital Service

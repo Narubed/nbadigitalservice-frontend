@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -17,10 +18,13 @@ Coded by www.creative-tim.com
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
+import { motion } from 'framer-motion/dist/framer-motion';
+import Image from '@material-tailwind/react/Image';
 // Material Kit 2 React components
-import bgImage from '../../assets/images/NBAService/NBA1.jpg';
+// import bgImage from '../../assets/images/NBAService/NBA1.jpg';
+import bgImage from '../../assets/images/NBAService/background/background-purple5.jpg';
 import MKBox from '../../components/MKBox';
 import MKTypography from '../../components/MKTypography';
 import MKSocialButton from '../../components/MKSocialButton';
@@ -40,9 +44,11 @@ import Download from './sections/Download';
 import Accounting from './sections/Accounting';
 import PrintingMedia from './sections/PrintingMedia';
 import WebsiteDesign from './sections/WebsiteDesign';
-
+import Logosilde from './sections/Logosilde';
+import NBAExpress from './sections/NBAExpress';
 // Presentation page components
 import BuiltByDevelopers from './components/BuiltByDevelopers';
+import ImageSlider from './sections/ImageSlider';
 
 // Routes
 import routes from '../../routes';
@@ -61,20 +67,37 @@ function Presentation() {
         }}
         sticky
       />
-      <MKBox
+      {/* <Box
+        height="100vh"
         minHeight="75vh"
-        width="100%"
+        width="100"
         sx={{
+          height: '10000%',
           backgroundImage: `url(${bgImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'top',
-          display: 'grid',
+          // backgroundPosition: 'top',
+          // display: 'grid',
           placeItems: 'center'
         }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <Typography
+      > */}
+      {/* <Box>
+        <div className="min-h-screen h-4/5">
+          <Image
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            minHeight="100vh"
+            minWidth="100%"
+            pt={6}
+            src={bgImage}
+            width="100%"
+          />
+        </div> */}
+      {/* <Container> */}
+      {/* <Grid container item xs={12} lg={7} justifyContent="center" mx="auto"> */}
+      {/* <Typography
               variant="h1"
               color="#b388ff"
               mt={-6}
@@ -84,28 +107,32 @@ function Presentation() {
                   fontSize: size['3xl']
                 }
               })}
-            >
-              {/* <div color="blue">NBA Digital Service</div>{" "} */}
-            </Typography>
-            <MKTypography
+            > */}
+      {/* <div color="blue">NBA Digital Service</div> */}
+      {/* </Typography> */}
+      {/* <MKTypography
               variant="body1"
               color="white"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
-            >
-              {/* ศูนย์บริการลูกค้า เอ็นบีเอ ดิจิตอลเวิลด์ ครบเครื่องครบวงจร บริการ เคาน์เตอร์ เซอร์วิส
+            > */}
+      {/* ศูนย์บริการลูกค้า เอ็นบีเอ ดิจิตอลเวิลด์ ครบเครื่องครบวงจร บริการ เคาน์เตอร์ เซอร์วิส
               ออกแบบสื่อสิ่งพิมพ์ออนไลน์และออฟไลน์ บัญชีและธุรกิจครบวงจร ปรึกษาทางด้านธุรกิจ
               กฏหมายบัญชีและภาษี */}
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
+      {/* </MKTypography> */}
+      {/* </Grid> */}
+      {/* </Container> */}
+      {/* </Box> */}
+      {/* <div>
+        <img className="h-96 min-h-24 hover:min-h-full w-full" src={bgImage} />
+      </div> */}
+      <ImageSlider />
       <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -8,
+          mt: -6,
           mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: 'saturate(200%) blur(30px)',
@@ -116,13 +143,22 @@ function Presentation() {
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
-        <Accounting />
-        <PrintingMedia />
-        <WebsiteDesign />
-        <Information />
-        <DesignBlocks />
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <Accounting />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <PrintingMedia />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <WebsiteDesign />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <NBAExpress />
+        </motion.div>
+        {/* <Information /> */}
+        {/* <DesignBlocks /> */}
         <Pages />
-        <Container>
+        {/* <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
@@ -165,10 +201,12 @@ function Presentation() {
               />
             </Grid>
           </Grid>
-        </Container>
-        <Testimonials />
-        <Download />
-        <MKBox pt={18} pb={6}>
+        </Container> */}
+        {/* <Testimonials /> */}
+        <Logosilde />
+
+        {/* <Download /> */}
+        {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: 'center', lg: 'left' } }}>
@@ -219,7 +257,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

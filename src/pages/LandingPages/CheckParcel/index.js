@@ -38,7 +38,8 @@ import routes from '../../../routes';
 import footerRoutes from '../../../footer.routes';
 
 // Images
-import bgImage from '../../../assets/images/bg-about-us.jpg';
+// import bgImage from '../../../assets/images/bg-about-us.jpg';
+import bgImage from '../../../assets/images/NBAService/background/background-purple3.jpg';
 
 function AboutUs() {
   return (
@@ -60,8 +61,8 @@ function AboutUs() {
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0), // 0.6
+              rgba(gradients.dark.state, 0) // 0.6
             )}, url(${bgImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',

@@ -107,7 +107,7 @@ function AboutUs() {
         }}
       >
         <Information />
-        {/* <Team /> */}
+        {/* <BlogImage /> */}
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>

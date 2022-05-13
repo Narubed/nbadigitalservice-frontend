@@ -46,6 +46,8 @@ import PrintingMedia from './sections/PrintingMedia';
 import WebsiteDesign from './sections/WebsiteDesign';
 import Logosilde from './sections/Logosilde';
 import NBAExpress from './sections/NBAExpress';
+import Advert from './sections/Advert';
+import Vision from './sections/Vision';
 // Presentation page components
 import BuiltByDevelopers from './components/BuiltByDevelopers';
 import ImageSlider from './sections/ImageSlider';
@@ -57,6 +59,7 @@ import footerRoutes from '../../footer.routes';
 function Presentation() {
   return (
     <>
+      <Advert />
       <DefaultNavbar
         routes={routes}
         action={{
@@ -128,6 +131,8 @@ function Presentation() {
         <img className="h-96 min-h-24 hover:min-h-full w-full" src={bgImage} />
       </div> */}
       <ImageSlider />
+      <Vision />
+
       <Card
         sx={{
           p: 2,
@@ -157,7 +162,7 @@ function Presentation() {
         </motion.div>
         {/* <Information /> */}
         {/* <DesignBlocks /> */}
-        <Pages />
+        {/* <Pages /> */}
         {/* <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>

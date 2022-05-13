@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable array-callback-return */
 /* eslint-disable no-undef */
+import './Information.scss';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Accordion from '@mui/material/Accordion';
@@ -47,14 +48,15 @@ function DesignBlocks() {
               <section id="1">
                 <Accordion>
                   <AccordionSummary
+                    sx={{ backgroundColor: '#E6E6FA' }}
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
                     <Typography>บริการที่จะท่านจะได้รับ จากบริษัทบริษัทของเรา</Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
+                  <AccordionDetails sx={{ backgroundColor: '#9932CC' }}>
+                    <Typography className="textwhite">
                       <p className="text-Kanit">
                         1. บริการด้านเคาน์เตอร์เซอร์วิสครบจงจร และบิลเกินกำหนดชำระ
                         <br />
@@ -80,8 +82,8 @@ function DesignBlocks() {
                   >
                     <Typography> บริการทางธุรกิจครบวงจร คืออะไร ?</Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
+                  <AccordionDetails sx={{ backgroundColor: '#9932CC' }}>
+                    <Typography className="textwhite">
                       <p>
                         {' '}
                         คือบริการต่าง ๆ ที่บริษัทมอบให้ลูกค้าของเเต่ละศูนย์ เช่น
@@ -104,14 +106,15 @@ function DesignBlocks() {
                 </Accordion>
                 <Accordion>
                   <AccordionSummary
+                    sx={{ backgroundColor: '#E6E6FA' }}
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
                     <Typography>สิ่งที่ลูกค้าต้องเตรียมคือ ?</Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
+                  <AccordionDetails sx={{ backgroundColor: '#9932CC' }}>
+                    <Typography className="textwhite">
                       <p>
                         1. สถานที่ไว้ให้ลูกค้าที่เข้ามาใช้บริการได้เข้ามาแพคของส่งเล็กน้อย (3*3
                         เมตร)
@@ -137,8 +140,8 @@ function DesignBlocks() {
                   >
                     <Typography>หากลูกค้าสนใจเปิดศูนย์บริการลูกค้าธุรกิจครบวงจรของเรา </Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
+                  <AccordionDetails sx={{ backgroundColor: '#9932CC' }}>
+                    <Typography className="textwhite">
                       <p>
                         แอดมินขอจะข้อมูลการปักหมุดและการแต่งตั้งผู้บริหารศูนย์ดังนี้คะ <br />
                         โดยการแอดไลน์ทางการของบริษัท @nba999 และส่งข้อมูลในการจัดตั้งศูนย์ฯ
@@ -149,14 +152,15 @@ function DesignBlocks() {
                 </Accordion>
                 <Accordion>
                   <AccordionSummary
+                    sx={{ backgroundColor: '#E6E6FA' }}
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
                     <Typography>ข้อแตกต่างของแต่ละ ระดับศูนย์</Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
+                  <AccordionDetails sx={{ backgroundColor: '#9932CC' }}>
+                    <Typography className="textwhite">
                       <p>
                         ผู้บริหารศูนย์จังหวัดและอำเภอ
                         อนาคตอันใกล้ตอนโปรเจคใหม่ลงมากมายตามแผนบริหารของส่วนกลาง

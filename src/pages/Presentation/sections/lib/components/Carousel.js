@@ -200,7 +200,7 @@ function Carousel({
                   setChange(!change);
                 }}
               >
-                &#10094;
+                <a className="text-autosize">&#10094; ก่อนหน้า</a>
               </a>
             )}
             {showNavBtn && (
@@ -211,7 +211,7 @@ function Carousel({
                   setChange(!change);
                 }}
               >
-                &#10095;
+                <a className="text-autosize">ถัดไป &#10095;</a>
               </a>
             )}
             {dots && (

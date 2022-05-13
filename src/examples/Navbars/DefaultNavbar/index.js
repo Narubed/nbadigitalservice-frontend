@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 // prop-types is a library for typechecking of props.
 import PropTypes from 'prop-types';
-
+import { styled } from '@mui/material/styles';
 // @mui material components
 import Container from '@mui/material/Container';
 import { Icon } from '@iconify/react';
@@ -18,6 +18,7 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import MuiLink from '@mui/material/Link';
 import { purple, grey } from '@mui/material/colors';
+import Button from '@mui/material/Button';
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
 import MKTypography from '../../../components/MKTypography';
@@ -28,9 +29,17 @@ import DefaultNavbarDropdown from './DefaultNavbarDropdown';
 import DefaultNavbarMobile from './DefaultNavbarMobile';
 
 // image
-import logoNBA from '../../../assets/images/NBAService/logo/logonba.png';
+import logoNBA from '../../../assets/images/NBAService/logo/logonba-.png';
 // Material Kit 2 React base styles
 import breakpoints from '../../../assets/theme/base/breakpoints';
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[500],
+  '&:hover': {
+    backgroundColor: purple[700]
+  }
+}));
 
 function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState('');
@@ -127,7 +136,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                       px={0.5}
                       mt={index !== 0 ? 2 : 0}
                     >
-                      {col.name}
+                      <div>{col.name}</div>
                     </MKTypography>
                     {col.collapse.map((item) => (
                       <MKTypography
@@ -156,7 +165,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                           }
                         })}
                       >
-                        {item.name}
+                        <div>{item.name}</div>
                       </MKTypography>
                     ))}
                   </Fragment>
@@ -486,10 +495,10 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                   color={action.color ? action.color : 'info'}
                   size="small"
                 >
-                  {action.label}
+                  <div>{action.label}</div>
                 </MKButton>
               ) : (
-                <MKButton
+                <ColorButton
                   component="a"
                   href={action.route}
                   // target="_blank"
@@ -499,11 +508,11 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                       ? 'contained'
                       : 'gradient'
                   }
-                  color={action.color ? action.color : 'info'}
+                  // color={action.color ? action.color : 'info'}
                   size="small"
                 >
-                  {action.label}
-                </MKButton>
+                  <div>{action.label}</div>
+                </ColorButton>
               ))}
           </MKBox>
           <MKBox

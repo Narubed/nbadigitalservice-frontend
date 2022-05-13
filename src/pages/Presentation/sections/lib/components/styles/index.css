@@ -1,6 +1,7 @@
 
 .carousel-image {
   vertical-align: middle;
+  min-height: 320px;
   width: 100%;
   height: 100%;
 }
@@ -38,7 +39,8 @@
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(238, 36, 238, 0.8);
+  border-radius: 38px;
 }
 
 /* Caption text */
@@ -157,6 +159,19 @@
 }
 .active-thumbnail {
   border: #476ff1 solid 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-autosize {
+    font-size: 65%;
+  }
+  .carousel-image {
+    vertical-align: middle;
+    min-height: 320px;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20%; */
+  }
 }
 @keyframes pause {
   0% {opacity: .2; }

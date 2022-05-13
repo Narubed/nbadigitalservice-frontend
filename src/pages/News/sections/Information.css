@@ -8,3 +8,7 @@
     color: blueviolet;
     text-shadow: 2px 0px black;
 }
+.pagination{
+    display: flex;
+    margin: auto;
+}

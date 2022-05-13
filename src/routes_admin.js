@@ -9,6 +9,8 @@ import AdminEditRepresentativePage from './layouts/pages/admin/admin-edit-repres
 import CreateAdmin from './layouts/pages/admin/create-admin';
 import AdminNews from './layouts/pages/admin/admin-news';
 import AdminCreateNews from './layouts/pages/admin/admin-create-news';
+import AdminAdvert from './layouts/pages/admin/admin-advert';
+import AdminCountry from './layouts/pages/admin/admin-country';
 
 const routes = [
   {
@@ -30,6 +32,18 @@ const routes = [
   {
     route: '/pages/admin/create-news',
     component: <AdminCreateNews />
+  },
+  {
+    name: 'จัดการ api',
+    icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
+    route: '/pages/admin/admin-AdminCountry',
+    component: <AdminCountry />
+  },
+  {
+    name: 'โฆษณา',
+    icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
+    route: '/pages/admin/admin-advert',
+    component: <AdminAdvert />
   },
   {
     name: 'จัดการข่าวสาร',

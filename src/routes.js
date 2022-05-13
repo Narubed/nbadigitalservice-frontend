@@ -15,15 +15,16 @@ import Blog from './layouts/pages/landing-pages/blog';
 import Contact from './layouts/pages/landing-pages/contact';
 
 // Shipping Company
-import Kerry from './layouts/pages/shipping-company/kerry';
-import EMS from './layouts/pages/shipping-company/ems';
-import Flash from './layouts/pages/shipping-company/flash';
-import NinjaVan from './layouts/pages/shipping-company/ninjavan';
-import DHL from './layouts/pages/shipping-company/dhl';
-import Best from './layouts/pages/shipping-company/best';
-import SCG from './layouts/pages/shipping-company/scg';
-import SCGCool from './layouts/pages/shipping-company/scgcool';
-import LazadaDOF from './layouts/pages/shipping-company/lazadadof';
+import ShippingCompany from './layouts/pages/shipping-company';
+// import Kerry from './layouts/pages/shipping-company/kerry';
+// import EMS from './layouts/pages/shipping-company/ems';
+// import Flash from './layouts/pages/shipping-company/flash';
+// import NinjaVan from './layouts/pages/shipping-company/ninjavan';
+// import DHL from './layouts/pages/shipping-company/dhl';
+// import Best from './layouts/pages/shipping-company/best';
+// import SCG from './layouts/pages/shipping-company/scg';
+// import SCGCool from './layouts/pages/shipping-company/scgcool';
+// import LazadaDOF from './layouts/pages/shipping-company/lazadadof';
 // Sections
 import PageHeaders from './layouts/sections/page-sections/page-headers';
 import Features from './layouts/sections/page-sections/featuers';
@@ -52,6 +53,7 @@ import RegionSouthern from './layouts/pages/region/region-southern';
 
 // News
 import News from './layouts/pages/news';
+import NewsDetail from './layouts/pages/news-detail';
 
 // download
 import Download from './layouts/pages/download';
@@ -62,68 +64,14 @@ const routes = [
     component: <Contact />
   },
   {
+    route: '/pages/news-detail',
+    component: <NewsDetail />
+  },
+  {
     name: 'เช็คเลขพัสดุ',
     icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
     route: '/pages/landing-pages/check-parcel',
     component: <CheckParcel />
-  },
-  {
-    name: 'ขนส่ง',
-    icon: <Icon icon="ci:window-check" />,
-    columns: 1,
-    rowsPerColumn: 2,
-    collapse: [
-      {
-        name: 'พันธมิตรของเรา',
-        collapse: [
-          {
-            name: 'จุดให้บริการงานไปรษณีย์',
-            route: '/pages/shipping-company/ems',
-            component: <EMS />
-          },
-          {
-            name: 'Kerry Express Thailand',
-            route: '/pages/shipping-company/kerry',
-            component: <Kerry />
-          },
-          {
-            name: 'Flash Express Thailand',
-            route: '/pages/shipping-company/flash',
-            component: <Flash />
-          },
-          {
-            name: 'Ninja Van Express',
-            route: '/pages/shipping-company/ninjavan',
-            component: <NinjaVan />
-          },
-          {
-            name: 'DHL eCommerce Thailand',
-            route: '/pages/shipping-company/dhl',
-            component: <DHL />
-          },
-          {
-            name: 'Best Express Thailand',
-            route: '/pages/shipping-company/best',
-            component: <Best />
-          },
-          {
-            name: 'SCG Express Thailand',
-            route: '/pages/shipping-company/scg',
-            component: <SCG />
-          },
-          {
-            name: 'SCG Express Cool Thailand',
-            route: '/pages/shipping-company/scgcoll',
-            component: <SCGCool />
-          },
-          {
-            name: 'Drop Off Lazada Thailand',
-            route: '/pages/shipping-company/lazadaDOF',
-            component: <LazadaDOF />
-          }
-        ]
-      }
-    ]
   },
   {
     name: 'บริการ',
@@ -140,6 +88,11 @@ const routes = [
             component: <Service />
           },
           {
+            name: 'บริการขนส่งของเรา',
+            route: '/pages/shipping-company/',
+            component: <ShippingCompany />
+          },
+          {
             name: 'รูปแบบการลงทุน',
             route: '/pages/landing-pages/investment',
             component: <Investment />
@@ -149,7 +102,7 @@ const routes = [
     ]
   },
   {
-    name: 'ตัวแทนศูนย์',
+    name: 'ศูนย์บริการของเรา',
     icon: <Icon icon="ci:window-check" />,
     columns: 1,
     rowsPerColumn: 2,

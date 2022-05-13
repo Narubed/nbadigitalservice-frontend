@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import './BlogNews.css';
 import PropTypes from 'prop-types';
 import Card from '@mui/material/Card';
@@ -23,10 +24,19 @@ import image1 from '../../../assets/images/NBAService/NBAExpress1.png';
 import image2 from '../../../assets/images/NBAService/NBA.jpg';
 
 export default function BlogNews({ news }) {
+  const onClickSetLocal = () => {
+    localStorage.setItem('news_id', news._id);
+  };
+
   return (
     <>
       <Grid item xs={12} md={4} sx={{ mb: { xs: 3, lg: 0 } }}>
-        <Card sx={{ maxWidth: '100%' }} onClick={() => console.log('Click me')}>
+        <Card
+          sx={{ maxWidth: '100%' }}
+          onClick={() => onClickSetLocal()}
+          component={RouterLink}
+          to="/pages/news-detail"
+        >
           <div className="container">
             <img
               className="image"
@@ -35,11 +45,7 @@ export default function BlogNews({ news }) {
           </div>
           {/* </MKBox> */}
           <CardContent sx={{ pt: 0, mt: 0 }}>
-            <div className="news_title">
-              <a href="#" onClick={() => console.log('clickme')}>
-                {news.news_title}
-              </a>
-            </div>
+            <div className="news_title">{news.news_title}</div>
             <div className="news_date">
               {dayjs(news.news_date).add(543, 'year').locale('th').format('D MMMM YYYY')}
             </div>

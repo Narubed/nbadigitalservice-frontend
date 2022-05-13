@@ -9,7 +9,7 @@ import { Icon } from '@iconify/react';
 import MKTypography from './components/MKTypography';
 
 // Images
-import logoCT from './assets/images/NBAService/NBA2.jpg';
+import logoCT from './assets/images/NBAService/logoservice.png';
 
 const date = new Date().getFullYear();
 

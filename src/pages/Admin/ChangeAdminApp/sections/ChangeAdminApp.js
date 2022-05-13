@@ -11,7 +11,6 @@ export default function ChangeAdminApp() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(async () => {
     const GETUsers = await axios.get(`${process.env.REACT_APP_WEB_SERVICE}/users`);
-    console.log(GETUsers);
     setUser(GETUsers.data.data);
   }, []);
   return (
@@ -36,29 +35,27 @@ export default function ChangeAdminApp() {
           เพิ่มผู้ดูแลใหม่
         </Button>
       </Stack>
-      <div className="container mx-auto">
-        <div className="flex flex-col">
-          <div className="w-full">
-            <div className="p-8 border-b border-gray-200 shadow">
-              <table className="divide-y divide-gray-300" id="dataTable">
-                <thead className="bg-black">
-                  <tr>
-                    <th className="px-6 py-2 text-xs text-white">ชื่อ</th>
-                    <th className="px-6 py-2 text-xs text-white">นามสกุล</th>
-                    <th className="px-6 py-2 text-xs text-white">Email</th>
-                    <th className="px-6 py-2 text-xs text-white">Edit</th>
-                    <th className="px-6 py-2 text-xs text-white">Delete</th>
-                    <th className="px-6 py-2 text-xs text-white">เปลี่ยนรหัสผ่าน</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-300">
-                  {User.map((value) => (
-                    // eslint-disable-next-line react/jsx-key
-                    <DataTable value={value} />
-                  ))}
-                </tbody>
-              </table>
-            </div>
+      <div className="flex flex-col">
+        <div className="w-full">
+          <div className="p-8 border-b border-gray-200 shadow">
+            <table className="divide-y divide-gray-300" id="dataTable">
+              <thead className="bg-black">
+                <tr>
+                  <th className="px-6 py-2 text-xs text-white">ชื่อ</th>
+                  <th className="px-6 py-2 text-xs text-white">นามสกุล</th>
+                  <th className="px-6 py-2 text-xs text-white">Email</th>
+                  <th className="px-6 py-2 text-xs text-white">Edit</th>
+                  <th className="px-6 py-2 text-xs text-white">Delete</th>
+                  <th className="px-6 py-2 text-xs text-white">เปลี่ยนรหัสผ่าน</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-300">
+                {User.map((value) => (
+                  // eslint-disable-next-line react/jsx-key
+                  <DataTable value={value} />
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

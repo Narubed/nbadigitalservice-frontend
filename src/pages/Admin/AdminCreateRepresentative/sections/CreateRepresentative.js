@@ -132,13 +132,19 @@ export default function AdminCreateProductApp() {
                     <option key="1" value="ภาคเหนือ">
                       ภาคเหนือ
                     </option>
-                    <option key="2" value="ภาคกลาง">
+                    <option key="2" value="ภาคตะวันออกเฉียงเหนือ">
+                      ภาคตะวันออกเฉียงเหนือ
+                    </option>
+                    <option key="3" value="ภาคตะวันตก">
+                      ภาคตะวันตก
+                    </option>
+                    <option key="4" value="ภาคกลาง">
                       ภาคกลาง
                     </option>
-                    <option key="3" value="ภาคอีสาน">
-                      ภาคอีสาน
+                    <option key="5" value="ภาคตะวันออก">
+                      ภาคตะวันออก
                     </option>
-                    <option key="4" value="ภาคใต้">
+                    <option key="6" value="ภาคใต้">
                       ภาคใต้
                     </option>
                   </select>

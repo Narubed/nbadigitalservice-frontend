@@ -16,7 +16,7 @@ import { Icon } from '@iconify/react';
 import MKBox from '../../../../components/MKBox';
 import MKTypography from '../../../../components/MKTypography';
 // image
-import bgImage from '../../../../assets/images/NBAService/NBA1.jpg';
+import bgImage from '../../../../assets/images/NBAService/nbashop4.png';
 
 export default function mainImage() {
   const sizeIcon = 36;

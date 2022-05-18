@@ -53,10 +53,6 @@ export default function AdminCreateProductApp() {
   }, []);
   const RegisterSchema = Yup.object().shape({});
   const handleSubmits = async () => {
-    console.log(titleNews);
-    console.log(file);
-    console.log(valueEditor);
-    console.log(value);
     const formdata = new FormData();
     formdata.append('avatar', file);
     formdata.append('news_title', titleNews);

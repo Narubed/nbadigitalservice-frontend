@@ -145,8 +145,10 @@ export default function AdminCreateProductApp() {
   const { errors, touched, handleSubmit, isSubmitting, getFieldProps } = formik;
   const optionsRegion = [
     { label: 'ภาคเหนือ', value: 'ภาคเหนือ' },
+    { label: 'ภาคตะวันออกเฉียงเหนือ', value: 'ภาคตะวันออกเฉียงเหนือ' },
+    { label: 'ภาคตะวันตก', value: 'ภาคตะวันตก' },
     { label: 'ภาคกลาง', value: 'ภาคกลาง' },
-    { label: 'ภาคอีสาน', value: 'ภาคอีสาน' },
+    { label: 'ภาคตะวันออก', value: 'ภาคตะวันออก' },
     { label: 'ภาคใต้', value: 'ภาคใต้' }
   ];
   const optionsLevel = [

@@ -50,6 +50,8 @@ import RegionCentral from './layouts/pages/region/region-central';
 import RegionNorthern from './layouts/pages/region/region-northern';
 import RegionEastern from './layouts/pages/region/region-eastern';
 import RegionSouthern from './layouts/pages/region/region-southern';
+import RegionNorthEast from './layouts/pages/region/region-norteast';
+import RegionWestern from './layouts/pages/region/region-western';
 
 // News
 import News from './layouts/pages/news';
@@ -57,6 +59,9 @@ import NewsDetail from './layouts/pages/news-detail';
 
 // download
 import Download from './layouts/pages/download';
+
+// HISHORY
+import CompanyHistory from './layouts/pages/company-history';
 
 const routes = [
   {
@@ -66,6 +71,10 @@ const routes = [
   {
     route: '/pages/news-detail',
     component: <NewsDetail />
+  },
+  {
+    route: '/pages/authentication/sign-in',
+    component: <SignIn />
   },
   {
     name: 'เช็คเลขพัสดุ',
@@ -116,6 +125,16 @@ const routes = [
             component: <RegionNorthern />
           },
           {
+            name: 'ภาคตะวันออกเฉียงเหนือ',
+            route: '/pages/region/northeast',
+            component: <RegionNorthEast />
+          },
+          {
+            name: 'ภาคตะวันตก',
+            route: '/pages/region/western',
+            component: <RegionWestern />
+          },
+          {
             name: 'ภาคกลาง',
             route: '/pages/region/central',
             component: <RegionCentral />
@@ -131,22 +150,35 @@ const routes = [
             component: <RegionSouthern />
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    name: 'เกี่ยวกับเรา',
+    // icon: <Icon icon="emojione:exclamation-question-mark" />,
+    columns: 1,
+    rowsPerColumn: 2,
+    collapse: [
       {
-        name: 'account',
+        name: 'Company History',
         collapse: [
           {
-            name: 'sign in',
-            route: '/pages/authentication/sign-in',
-            component: <SignIn />
+            name: 'ประวัติบริษัท',
+            route: '/pages/history',
+            component: <CompanyHistory />
           }
+          // {
+          //   name: 'โครงสร้างองค์กร',
+          //   route: '/pages/landing-pages/blog',
+          //   component: <Blog />
+          // }
         ]
       }
     ]
   },
   {
     name: 'ช่วยเหลือ',
-    icon: <Icon icon="emojione:exclamation-question-mark" />,
+    // icon: <Icon icon="emojione:exclamation-question-mark" />,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [

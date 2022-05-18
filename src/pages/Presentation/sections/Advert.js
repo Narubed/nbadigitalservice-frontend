@@ -26,7 +26,7 @@ function Advert() {
   return (
     <Dialog
       fullWidth
-      maxWidth="md"
+      maxWidth="lg"
       open={open}
       TransitionComponent={Transition}
       keepMounted

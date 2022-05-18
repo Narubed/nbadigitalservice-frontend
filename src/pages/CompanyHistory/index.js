@@ -29,13 +29,8 @@ import DefaultNavbar from '../../examples/Navbars/DefaultNavbar';
 import DefaultFooter from '../../examples/Footers/DefaultFooter';
 
 // About Us page sections
-// import Information from './sections/Information';
-// import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-// import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-
-// Routes
+import MainCard from './sections/MainCard';
 import routes from '../../routes';
-// import routes from '../../../routes_admin';
 import footerRoutes from '../../footer.routes';
 
 // Images
@@ -89,10 +84,10 @@ function AboutUs() {
                 }
               })}
             >
-              ข่าวสาร
+              ประวัติความเป็นมา
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              NBA Digital Service
+              เอ็นบีเอ ดิจิตอล เซอร์วิส เซ็นเตอร์
             </MKTypography>
           </Grid>
         </Container>
@@ -106,7 +101,7 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >
-        {/* <Information /> */}
+        <MainCard />
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>

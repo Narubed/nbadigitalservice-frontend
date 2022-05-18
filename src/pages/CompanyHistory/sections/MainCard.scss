@@ -1,0 +1,43 @@
+.MainCard {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 4px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 5px 5px;
+  //   background-color: #DDA0DD;
+  background-image: url('../../../assets/images/NBAService/background/purple1.jpg');
+  background-color: #ff00ff;
+  height: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+.MainCardText {
+  text-align: center;
+  position: absolute;
+  font-size: 16px;
+  padding: 0 25px;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .MainCard {
+    font-size: 14px;
+    color: white;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .MainCard {
+    font-size: 8px;
+    color: white;
+  }
+}

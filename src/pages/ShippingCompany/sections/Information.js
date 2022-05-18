@@ -20,15 +20,15 @@ import MKBox from '../../../components/MKBox';
 // Material Kit 2 React examples
 // import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 // import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-import Ninjavan from '../../../assets/images/NBAService/parcel/Ninjavan.png';
-import BestExpress from '../../../assets/images/NBAService/parcel/BestExpress.png';
-import DHL from '../../../assets/images/NBAService/parcel/DHL.jpg';
-import EMS from '../../../assets/images/NBAService/parcel/EMS.jpg';
-import Flash from '../../../assets/images/NBAService/parcel/Flash.jpg';
-import Kerry from '../../../assets/images/NBAService/parcel/Kerry.jpg';
-import Lazada from '../../../assets/images/NBAService/parcel/Lazada.jpg';
-import SCG from '../../../assets/images/NBAService/parcel/SCG.jpg';
-import SCGCool from '../../../assets/images/NBAService/parcel/SCGCool.jpg';
+import Ninjavan from '../../../assets/images/NBAService/parcel/Ninjavan2.png';
+import BestExpress from '../../../assets/images/NBAService/parcel/Best2.png';
+import DHL from '../../../assets/images/NBAService/parcel/DHL2.png';
+import EMS from '../../../assets/images/NBAService/parcel/EMS2.png';
+import Flash from '../../../assets/images/NBAService/parcel/Flash2.png';
+import Kerry from '../../../assets/images/NBAService/parcel/Kerry2.png';
+import Lazada from '../../../assets/images/NBAService/parcel/Lazada2.png';
+import SCG from '../../../assets/images/NBAService/parcel/SCG2.png';
+import SCGCool from '../../../assets/images/NBAService/parcel/SCGCool2.png';
 
 const data = [
   {

@@ -2,9 +2,7 @@
 import React from 'react';
 import './CSS/Vision.scss';
 import Marquee from 'react-fast-marquee';
-import Image from '@material-tailwind/react/Image';
 import { purple } from '@mui/material/colors';
-import imagebox from '../../../assets/images/NBAService/background/speaker1.png';
 
 export default function Vision() {
   return (

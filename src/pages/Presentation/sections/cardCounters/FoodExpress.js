@@ -60,7 +60,7 @@ function RotatingCardBack({ color, image, title, description, action }) {
           <MKBox width="50%" mt={4} mb={2} mx="auto">
             {action.type === 'external' ? (
               <MKButton
-                onClick={() => window.open('https://foodexpress2.nbadigitalworlds.com/', '_blank')}
+                onClick={() => window.open('https://foodexpress.nbadigitalservice.com/', '_blank')}
                 component={MuiLink}
                 href={action.route}
                 target="_blank"
@@ -73,7 +73,7 @@ function RotatingCardBack({ color, image, title, description, action }) {
               </MKButton>
             ) : (
               <MKButton
-                onClick={() => window.open('https://foodexpress2.nbadigitalworlds.com/', '_blank')}
+                onClick={() => window.open('https://foodexpress.nbadigitalservice.com/', '_blank')}
                 component={Link}
                 to={action.route}
                 color="white"
@@ -107,7 +107,7 @@ function Information() {
           description="โปรแกรม สั่งซื้อสินค้าหรืออาหาร ในรูปเเบบออนไลน์."
           action={{
             type: 'internal',
-            route: 'https://foodexpress2.nbadigitalworlds.com/',
+            route: 'https://foodexpress.nbadigitalservice.com/',
             label: 'ไปยังเว็บ'
           }}
         />

@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 // @mui material components
 import MuiLink from '@mui/material/Link';
 // Material Kit 2 React examples
-import { Icon } from '@iconify/react';
 import RotatingCard from '../../../../examples/Cards/RotatingCard';
 // import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 // import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";

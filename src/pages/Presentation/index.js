@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable jsx-a11y/alt-text */
 /*
 =========================================================
@@ -48,6 +49,7 @@ import Logosilde from './sections/Logosilde';
 import NBAExpress from './sections/NBAExpress';
 import Advert from './sections/Advert';
 import Vision from './sections/Vision';
+
 // Presentation page components
 import BuiltByDevelopers from './components/BuiltByDevelopers';
 import ImageSlider from './sections/ImageSlider';
@@ -144,6 +146,26 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >
+        {/* <iframe
+          width="100%"
+          height="880"
+          src="http://online.anyflip.com/eahgk/imzl/"
+          seamless="seamless"
+          scrolling="no"
+          frameBorder="0"
+          allowtransparency="true"
+          allowFullScreen="true"
+        /> */}
+        {/* <iframe
+          width="100%"
+          height="760px"
+          src="https://anyflip.com/bookcase/mzlqf/red"
+          seamless="seamless"
+          scrolling="no"
+          frameBorder="0"
+          allowtransparency="true"
+          allowFullScreen="true"
+        /> */}
         <Counters />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />

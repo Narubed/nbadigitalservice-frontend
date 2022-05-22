@@ -60,6 +60,9 @@ import NewsDetail from './layouts/pages/news-detail';
 // download
 import Download from './layouts/pages/download';
 
+// Book
+import Books from './layouts/pages/book';
+
 // HISHORY
 import CompanyHistory from './layouts/pages/company-history';
 
@@ -185,6 +188,11 @@ const routes = [
       {
         name: 'Additional Services',
         collapse: [
+          {
+            name: 'คู่มือออนไลน์',
+            route: '/pages/book',
+            component: <Books />
+          },
           {
             name: 'บล๊อกข่าวสาร',
             route: '/pages/news',

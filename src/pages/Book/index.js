@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -19,27 +20,25 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 
 // Material Kit 2 React components
-import MKBox from '../../../components/MKBox';
-import MKTypography from '../../../components/MKTypography';
-// import MKButton from "components/MKButton";
+// import bgImage from '../../assets/images/bg-about-us.jpg';
+import bgImage from '../../assets/images/NBAService/background/background-purple2.jpg';
+import MKBox from '../../components/MKBox';
+import MKTypography from '../../components/MKTypography';
 
 // Material Kit 2 React examples
-import DefaultNavbar from '../../../examples/Navbars/DefaultNavbar';
-import DefaultFooter from '../../../examples/Footers/DefaultFooter';
+import DefaultNavbar from '../../examples/Navbars/DefaultNavbar';
+import DefaultFooter from '../../examples/Footers/DefaultFooter';
 
 // About Us page sections
-// import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from './sections/Team';
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
-import routes from '../../../routes';
-import footerRoutes from '../../../footer.routes';
+import routes from '../../routes';
+// import routes from '../../../routes_admin';
+import footerRoutes from '../../footer.routes';
 
 // Images
-// import bgImage from '../../../assets/images/bg-about-us.jpg';
-import bgImage from '../../../assets/images/NBAService/background/background-purple3.jpg';
 
 function AboutUs() {
   return (
@@ -56,13 +55,13 @@ function AboutUs() {
         light
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="35vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0), // 0.6
-              rgba(gradients.dark.state, 0) // 0.6
+              rgba(gradients.dark.main, 0.6),
+              rgba(gradients.dark.state, 0.6)
             )}, url(${bgImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -90,37 +89,17 @@ function AboutUs() {
                 }
               })}
             >
-              เช็คเลขพัสดุ
+              คู่มือออนไลน์
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              You can select a company for checking your parcel number as below.
+              NBA Digital Service
             </MKTypography>
-            {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton> */}
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography> */}
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              {/* <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography> */}
-            </MKBox>
           </Grid>
         </Container>
       </MKBox>
       <Card
         sx={{
-          backgroundColor: '#2515',
+          // backgroundColor: '#BA55D3',
           p: 2,
           mx: { xs: 2, lg: 3 },
           mt: -8,
@@ -128,8 +107,16 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >
-        {/* <Information /> */}
-        <Team />
+        <iframe
+          width="100%"
+          height="760px"
+          src="https://anyflip.com/bookcase/mzlqf/red"
+          seamless="seamless"
+          scrolling="no"
+          frameBorder="0"
+          allowtransparency="true"
+          allowFullScreen="true"
+        />
         {/* <Featuring /> */}
         {/* <Newsletter /> */}
       </Card>

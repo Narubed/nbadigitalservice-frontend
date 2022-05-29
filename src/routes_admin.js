@@ -32,12 +32,12 @@ const routes = [
     route: '/pages/admin/create-news',
     component: <AdminCreateNews />
   },
-  {
-    name: 'จัดการ api',
-    icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
-    route: '/pages/admin/admin-AdminCountry',
-    component: <AdminCountry />
-  },
+  // {
+  //   name: 'จัดการ api',
+  //   icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
+  //   route: '/pages/admin/admin-AdminCountry',
+  //   component: <AdminCountry />
+  // },
   {
     name: 'โฆษณา',
     icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,

@@ -39,11 +39,15 @@ export default function AdminCreateProductApp() {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
-    const getApi = await axios.get(
-      'https://codebee.co.th/labs/examples/autoprovince/json/provinces.json'
+    const tokenkey = {
+      tokenKey: '*NBADigital9111*'
+    };
+    const getApi = await axios.post(
+      'https://api.nbadigitalservice.com/api/nba-geo/provinces',
+      tokenkey
     );
     const valueOption = [];
-    getApi.data.forEach((element) => {
+    getApi.data.data.forEach((element) => {
       const data = {
         value: element.province_name,
         label: element.province_name

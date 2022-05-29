@@ -96,13 +96,13 @@ function Information() {
     <Container>
       <RotatingCard>
         <RotatingCardFront
-          image={require('../../../../assets/images/NBAService/logo/tranfer2.png').default}
+          image={require('../../../../assets/images/NBAService/logo/tranfer3.png').default}
           icon="touch_app"
           title={<>E-TRANSFER</>}
           description="สำหรับข้อมูลบัญชี."
         />
         <RotatingCardBack
-          image={require('../../../../assets/images/NBAService/logo/tranfer2.png').default}
+          image={require('../../../../assets/images/NBAService/logo/tranfer3.png').default}
           title="E-TRANSFER"
           description="โปรแกรมบริหารจัดการ ระบบบัญชี."
           action={{

@@ -9,7 +9,7 @@ export default function getData(props) {
   React.useEffect(async () => {
     const Representative = await axios.get(`${process.env.REACT_APP_WEB_SERVICE}/representatives`);
     const filterRegion = Representative.data.data.filter(
-      (value) => value.region_name === 'ภาคอีสาน'
+      (value) => value.region_name === 'ภาคตะวันออก'
     );
     const dataRepresentatives = [];
 

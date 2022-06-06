@@ -14,13 +14,28 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React Base Styles
+import { borderRadius } from '@mui/system';
+import borders from './borders';
 import colors from './colors';
 
 const { info, dark } = colors;
 
 export default {
   html: {
-    scrollBehavior: 'smooth'
+    scrollBehavior: 'smooth',
+    '&::-webkit-scrollbar': {
+      width: '0.8em'
+    },
+    '&::-webkit-scrollbar-track': {
+      boxShadow: 'inset 0 0 6px rgba(102,51,153,1)',
+      webkitBoxShadow: 'inset 0 0 6px rgba(102,51,153,1.00)',
+      borderRadius: '10px'
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: 'rgba(102,51,153,1)',
+      outline: '1px solid slategrey',
+      borderRadius: '10px'
+    }
   },
   '*, *::before, *::after': {
     margin: 0,

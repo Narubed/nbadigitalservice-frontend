@@ -52,7 +52,8 @@ export default {
       items: [
         { name: 'E-Branch', href: 'https://e-branch2.nbadigitalworlds.com/' },
         { name: 'E-TRANFER', href: 'https://e-transfer.nbadigitalworlds.com/' },
-        { name: 'FoodExpress', href: 'https://foodexpress2.nbadigitalworlds.com/' }
+        { name: 'NBA-Express', href: 'https://nba-express.nbadigitalworlds.com/' },
+        { name: 'Food-Express', href: 'https://foodexpress2.nbadigitalworlds.com/' }
       ]
     },
     {

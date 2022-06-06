@@ -110,6 +110,7 @@ function AboutUs() {
         <iframe
           width="100%"
           height="760px"
+          size="Small"
           src="https://anyflip.com/bookcase/mzlqf/red"
           seamless="seamless"
           scrolling="no"

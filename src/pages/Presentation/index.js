@@ -57,6 +57,7 @@ import ImageSlider from './sections/ImageSlider';
 // Routes
 import routes from '../../routes';
 import footerRoutes from '../../footer.routes';
+import ImageFooter from '../../examples/Footers/ImageFooter';
 
 function Presentation() {
   return (
@@ -288,6 +289,7 @@ function Presentation() {
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
+        {/* <ImageFooter /> */}
       </MKBox>
     </>
   );

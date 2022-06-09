@@ -1,0 +1,42 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.king-image {
+    margin: auto;
+    /* padding-top: 25px; */
+    padding: auto;
+    width: 860px;
+
+}
+
+.button-main-rigth {
+    padding-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+    width: 35%;
+}
+
+.button-main-left {
+    padding-top: 15px;
+    display: block;
+    margin-left: 15px;
+    margin-right: auto;
+    width: 35%;
+}
+
+@media only screen and (max-width: 990px) {
+    .button-main-rigth {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-main-left {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

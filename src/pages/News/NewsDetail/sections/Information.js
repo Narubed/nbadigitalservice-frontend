@@ -49,7 +49,7 @@ function DesignBlocks() {
       {/* <a className="header-text-news">ข่าวประชาสัมพันธ์</a> */}
       <>
         <Grid item xs={12} lg={9}>
-          <Grid container spacing={2}>
+          <Grid spacing={2}>
             {showNews.map((value) => (
               <CardNews showNews={value} />
             ))}

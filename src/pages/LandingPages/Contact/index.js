@@ -12,13 +12,16 @@ import DefaultNavbar from '../../../examples/Navbars/DefaultNavbar';
 import Profile from './sections/Profile';
 import Footer from './sections/Footer';
 import ContactBox from './sections/ContactBox';
+import DefaultFooter from '../../../examples/Footers/DefaultFooter';
 
 // Routes
 import routes from '../../../routes';
-
+import footerRoutes from '../../../footer.routes';
 // Images
 // import bgImage from '../../../assets/images/city-profile.jpg';
-import bgImage from '../../../assets/images/NBAService/background/background-purple2.jpg';
+// import bgImage from '../../../assets/images/NBAService/background/background-purple2.jpg';
+import bgImage from '../../../assets/images/NBAService/background/BGPages.jpg';
+import bgImageBuble from '../../../assets/images/NBAService/background/buble.png';
 
 function Author() {
   return (
@@ -56,6 +59,11 @@ function Author() {
             mx: { xs: 2, lg: 3 },
             mt: -8,
             mb: 4,
+            background: 'none',
+            backgroundAttachment: 'fixed',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundImage: `url(${bgImageBuble})`,
             backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
             backdropFilter: 'saturate(200%) blur(30px)',
             boxShadow: ({ boxShadows: { xxl } }) => xxl
@@ -73,7 +81,10 @@ function Author() {
             referrerpolicy="no-referrer-when-downgrade"
           />
         </Card>
-        <Footer />
+        {/* <Footer /> */}
+        <MKBox pt={6} px={1} mt={6}>
+          <DefaultFooter content={footerRoutes} />
+        </MKBox>
       </MKBox>
     </>
   );

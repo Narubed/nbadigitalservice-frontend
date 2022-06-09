@@ -39,7 +39,8 @@ import footerRoutes from '../../../footer.routes';
 
 // Images
 // import bgImage from '../../../assets/images/bg-about-us.jpg';
-import bgImage from '../../../assets/images/NBAService/background/background-purple3.jpg';
+import bgImage from '../../../assets/images/NBAService/background/BGPages.jpg';
+import bgImageBuble from '../../../assets/images/NBAService/background/buble.png';
 
 function AboutUs() {
   return (
@@ -56,7 +57,7 @@ function AboutUs() {
         light
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="45vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -120,11 +121,17 @@ function AboutUs() {
       </MKBox>
       <Card
         sx={{
-          backgroundColor: '#2515',
+          // backgroundColor: '#2515',
           p: 2,
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundImage: `url(${bgImageBuble})`,
+          // backgroundImage: `url(${bgImage2})`,
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >

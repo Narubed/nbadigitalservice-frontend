@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-
 // Material Kit 2 React components
 import MKBox from '../../../../components/MKBox';
 
@@ -30,7 +30,8 @@ function BuiltByDevelopers() {
           <iframe
             width="100%"
             height="520"
-            src="https://www.youtube.com/embed/0cnbLFY-vC0"
+            src="https://www.youtube.com/embed/3ZGcaGhkCTI?Version=3&loop=1&playlist=3ZGcaGhkCTI"
+            // src="https://www.youtube.com/embed/3ZGcaGhkCTI"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

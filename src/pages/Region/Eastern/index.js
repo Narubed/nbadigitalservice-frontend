@@ -9,6 +9,7 @@ import DesignBlocks from './sections/DesignBlocks';
 // Routes
 import routes from '../../../routes';
 import footerRoutes from '../../../footer.routes';
+import bgImageBuble from '../../../assets/images/NBAService/background/buble.png';
 
 // Image
 
@@ -31,6 +32,12 @@ function ContactUs() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundImage: `url(${bgImageBuble})`,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: 'saturate(200%) blur(30px)',
           boxShadow: ({ boxShadows: { xxl } }) => xxl

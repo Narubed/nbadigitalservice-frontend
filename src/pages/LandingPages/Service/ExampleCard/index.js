@@ -44,6 +44,7 @@ function RotatingCardBack({ image, title, description }) {
       left={0}
       zIndex={5}
       sx={{
+        // borderRadius: '55px',
         backgroundImage: ({ functions: { linearGradient, rgba } }) =>
           `${linearGradient(rgba(purple[500], 0.15), rgba(purple[500], 0.95))}, url(${image})`,
         backgroundSize: 'cover',

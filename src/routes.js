@@ -65,6 +65,10 @@ import Books from './layouts/pages/book';
 
 // HISHORY
 import CompanyHistory from './layouts/pages/company-history';
+import CompanyStructure from './layouts/pages/company-structure';
+
+// Pinto
+import PintoApp from './layouts/pages/pinto';
 
 const routes = [
   {
@@ -79,6 +83,11 @@ const routes = [
     route: '/pages/authentication/sign-in',
     component: <SignIn />
   },
+  {
+    route: '/pages/pinto',
+    component: <PintoApp />
+  },
+
   {
     name: 'เช็คเลขพัสดุ',
     icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
@@ -169,7 +178,13 @@ const routes = [
             name: 'ประวัติบริษัท',
             route: '/pages/history',
             component: <CompanyHistory />
+          },
+          {
+            name: 'โครงสร้างบริษัท',
+            route: '/pages/structure',
+            component: <CompanyStructure />
           }
+
           // {
           //   name: 'โครงสร้างองค์กร',
           //   route: '/pages/landing-pages/blog',

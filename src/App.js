@@ -12,10 +12,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './assets/theme';
 import Presentation from './layouts/pages/presentation';
 import Admin from './layouts/pages/admin/adminabout-us';
+import Main from './layouts/pages/main';
 
 // Material Kit 2 React routes
 import routes from './routes';
 import routesadmin from './routes_admin';
+import routesmain from './routes_main';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -40,6 +42,7 @@ export default function App() {
     });
 
   const token = sessionStorage.getItem('token');
+  const main = sessionStorage.getItem('main');
   // const newRoutes = token === null ? routes : routesadmin;
   // console.log(token);
   if (token) {
@@ -51,6 +54,20 @@ export default function App() {
         <Route path="/" element={<Admin />} /> */}
           {getRoutes(routesadmin)}
           <Route path="/" element={<Admin />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </ThemeProvider>
+    );
+  }
+  if (!main) {
+    return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Routes>
+          {/* {token && getRoutes(routesadmin)}
+        <Route path="/" element={<Admin />} /> */}
+          {getRoutes(routesmain)}
+          <Route path="/" element={<Main />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </ThemeProvider>

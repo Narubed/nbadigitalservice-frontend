@@ -1,32 +1,36 @@
 /* eslint-disable global-require */
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+import React from 'react';
 // prop-types is a library for typechecking of props
 import PropTypes from 'prop-types';
 import Image from '@material-tailwind/react/Image';
 // @mui material components
 import Tooltip from '@mui/material/Tooltip';
+import Slide from '@mui/material/Slide';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import Button from '@mui/material/Button';
 
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
 import MKTypography from '../../../components/MKTypography';
 
+const Transition = React.forwardRef((props, ref) => <Slide direction="up" ref={ref} {...props} />);
+
 function ExampleCard({ image, name, count, pro, ...rest }) {
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const imageTemplate = (
     <MKBox
+      onClick={handleClickOpen}
       bgColor="white"
       borderRadius="xl"
       shadow="lg"
@@ -62,29 +66,64 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
   );
 
   return (
-    <MKBox position="relative">
-      {pro ? (
-        <Tooltip title={name} placement="top">
-          {imageTemplate}
-        </Tooltip>
-      ) : (
-        imageTemplate
-      )}
-      {name || count > 0 ? (
-        <MKBox mt={1} ml={1} lineHeight={1}>
-          {name && (
-            <MKTypography variant="h6" fontWeight="bold">
-              {name}
-            </MKTypography>
-          )}
-          {count > 0 && (
-            <MKTypography variant="button" fontWeight="regular" color="secondary">
-              {count}
-            </MKTypography>
-          )}
-        </MKBox>
-      ) : null}
-    </MKBox>
+    <>
+      <MKBox position="relative">
+        {pro ? (
+          <Tooltip title={name} placement="top">
+            {imageTemplate}
+          </Tooltip>
+        ) : (
+          imageTemplate
+        )}
+        {name || count > 0 ? (
+          <MKBox mt={1} ml={1} lineHeight={1}>
+            {name && (
+              <MKTypography variant="h6" fontWeight="bold">
+                {name}
+              </MKTypography>
+            )}
+            {count > 0 && (
+              <MKTypography variant="button" fontWeight="regular" color="secondary">
+                {count}
+              </MKTypography>
+            )}
+          </MKBox>
+        ) : null}
+      </MKBox>
+      <Dialog
+        fullWidth="fullWidth"
+        maxWidth="md"
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogContent sx={{ bgcolor: '#730099' }}>
+          <DialogContentText id="alert-dialog-slide-description">
+            <Image src={image} raised alt="Rounded Raised Image" />
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions sx={{ bgcolor: '#730099' }}>
+          <Button
+            color="error"
+            sx={{
+              color: 'purple',
+              // bgcolor: 'red',
+              borderRadius: 50,
+              '&:hover': {
+                color: '#ffffff',
+                bgcolor: 'red'
+              }
+            }}
+            variant="contained"
+            onClick={handleClose}
+          >
+            ออก
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
 }
 

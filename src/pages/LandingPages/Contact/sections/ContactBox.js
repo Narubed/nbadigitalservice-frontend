@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 import MKBox from '../../../../components/MKBox';
 // import MKBadge from "components/MKBadge";
 import MKTypography from '../../../../components/MKTypography';
-import bgImage from '../../../../assets/images/NBAService/contect/contact.png';
+import bgImage from '../../../../assets/images/NBAService/contect/contact2.png';
 import MKButton from '../../../../components/MKButton';
 // Presentation page components
 
@@ -21,7 +21,7 @@ function DesignBlocks() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h4" fontWeight="bold" mb={1}>
-                NBA Digital Service
+                NBA Digital Service Center.
               </MKTypography>
               <MKTypography
                 variant="body2"
@@ -32,12 +32,12 @@ function DesignBlocks() {
                 display="flex"
               >
                 <MKButton
-                  onClick={() => window.open('tel:085-842-7606', '_blank')}
+                  onClick={() => window.open('tel:052-100-8929', '_blank')}
                   color="primary"
                   variant="link"
                   startIcon={<Icon icon="noto:telephone" color="red" width="26" height="26" />}
                 >
-                  085-842-7606
+                  052-100-8929
                 </MKButton>
               </MKTypography>
               <MKTypography
@@ -75,7 +75,7 @@ function DesignBlocks() {
                   variant="link"
                   startIcon={<Icon icon="logos:facebook" width="26" height="26" />}
                 >
-                  NBA Digital Business Center
+                  NBA Digital Service Center
                 </MKButton>
               </MKTypography>
               <MKTypography
@@ -104,12 +104,12 @@ function DesignBlocks() {
                 display="flex"
               >
                 <MKButton
-                  onClick={() => window.open('mailto:service@nbadigitalworlds.com', '_blank')}
+                  onClick={() => window.open('mailto:info@nbadigitalservice.com', '_blank')}
                   color="primary"
                   variant="link"
                   startIcon={<Icon icon="noto-v1:e-mail" width="26" height="26" />}
                 >
-                  service@nbadigitalworlds.com
+                  info@nbadigitalservice.com
                 </MKButton>
                 {/* <Button
                 onClick={() => window.open("mailto:service@nbadigitalworlds.com", "_blank")}
@@ -129,7 +129,9 @@ function DesignBlocks() {
           <Grid item xs={12} lg={9}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={12} sx={{ mb: 12 }}>
-                <Image src={bgImage} rounded={false} raised alt="Raised Image" />
+                <div className="img-hover-zoom--slowmo">
+                  <Image src={bgImage} rounded={false} raised alt="Raised Image" />
+                </div>
               </Grid>
             </Grid>
           </Grid>

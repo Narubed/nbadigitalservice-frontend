@@ -25,24 +25,33 @@ import MKTypography from '../../../../components/MKTypography';
 import HorizontalTeamCard from '../../../../examples/Cards/TeamCards/HorizontalTeamCard';
 
 // Images
-import EMS from '../../../../assets/images/NBAService/parcel/EMS.jpg';
-import DHL from '../../../../assets/images/NBAService/parcel/DHL.jpg';
-import Flash from '../../../../assets/images/NBAService/parcel/Flash.jpg';
-import Kerry from '../../../../assets/images/NBAService/parcel/Kerry.jpg';
-import SCG from '../../../../assets/images/NBAService/parcel/SCG.jpg';
+import EMS from '../../../../assets/images/NBAService/logoParcel/ems.png';
+import DHL from '../../../../assets/images/NBAService/logoParcel/dhl.png';
+import Flash from '../../../../assets/images/NBAService/logoParcel/flash.png';
+import Kerry from '../../../../assets/images/NBAService/logoParcel/kerry.png';
+import SCG from '../../../../assets/images/NBAService/logoParcel/scg.png';
 import True from '../../../../assets/images/NBAService/parcel/True.jpg';
-import BestExpress from '../../../../assets/images/NBAService/parcel/BestExpress.png';
+import BestExpress from '../../../../assets/images/NBAService/logoParcel/best.png';
 import Deliveree from '../../../../assets/images/NBAService/parcel/Deliveree.png';
-import Ninjavan from '../../../../assets/images/NBAService/parcel/Ninjavan.png';
-import SCGCool from '../../../../assets/images/NBAService/parcel/SCGCool.jpg';
-import Lazada from '../../../../assets/images/NBAService/parcel/Lazada.jpg';
+import Ninjavan from '../../../../assets/images/NBAService/logoParcel/ninja.png';
+import SCGCool from '../../../../assets/images/NBAService/logoParcel/scgcool.png';
+import Lazada from '../../../../assets/images/NBAService/logoParcel/lazada.png';
+import bgImageBuble from '../../../../assets/images/NBAService/background/buble.png';
+// import bgImageBuble2 from '../../../../assets/images/NBAService/background/buble2.png';
 
 function Team() {
   return (
     <MKBox
+      sx={{
+        background: 'none',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundImage: `url(${bgImageBuble})`
+      }}
       component="section"
       variant="gradient"
-      bgColor="dark"
+      // bgColor="dark"
       position="relative"
       py={6}
       px={{ xs: 2, lg: 0 }}

@@ -1,26 +1,13 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 
 // Material Kit 2 React components
 // import bgImage from '../../assets/images/bg-about-us.jpg';
-import bgImage from '../../assets/images/NBAService/background/background-purple2.jpg';
+// import bgImage from '../../assets/images/NBAService/background/background-purple2.jpg';
+import bgImage from '../../assets/images/NBAService/background/BGPages.jpg';
+import bgImageBuble from '../../assets/images/NBAService/background/buble.png';
+
 import MKBox from '../../components/MKBox';
 import MKTypography from '../../components/MKTypography';
 
@@ -55,7 +42,7 @@ function indexs() {
         light
       />
       <MKBox
-        minHeight="35vh"
+        minHeight="45vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -103,6 +90,11 @@ function indexs() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          // background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundImage: `url(${bgImageBuble})`,
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >

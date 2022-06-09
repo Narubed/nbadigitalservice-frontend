@@ -50,14 +50,14 @@ function RotatingCardBack({ color, image, title, description, action }) {
       }}
     >
       <MKBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
-        <MKTypography variant="h3" color="white" gutterBottom>
+        <MKTypography variant="h5" color="white" gutterBottom>
           {title}
         </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        <MKTypography variant="caption" color="white" opacity={0.8}>
           {description}
         </MKTypography>
         {action && (
-          <MKBox width="50%" mt={4} mb={2} mx="auto">
+          <MKBox width="50%" mt={2} mb={2} mx="auto">
             {action.type === 'external' ? (
               <MKButton
                 onClick={() => window.open('https://e-transfer.nbadigitalworlds.com/', '_blank')}
@@ -69,7 +69,9 @@ function RotatingCardBack({ color, image, title, description, action }) {
                 size="small"
                 fullWidth
               >
-                {action.label}
+                <MKTypography variant="caption" opacity={0.8}>
+                  {action.label}
+                </MKTypography>
               </MKButton>
             ) : (
               <MKButton
@@ -80,7 +82,9 @@ function RotatingCardBack({ color, image, title, description, action }) {
                 size="small"
                 fullWidth
               >
-                {action.label}
+                <MKTypography variant="caption" opacity={0.8}>
+                  {action.label}
+                </MKTypography>
               </MKButton>
             )}
           </MKBox>
@@ -108,7 +112,7 @@ function Information() {
           action={{
             type: 'internal',
             route: 'https://e-transfer.nbadigitalworlds.com/',
-            label: 'ไปยังเว็บ'
+            label: 'เว็บไซต์'
           }}
         />
       </RotatingCard>

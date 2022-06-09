@@ -20,7 +20,8 @@ import Card from '@mui/material/Card';
 
 // Material Kit 2 React components
 // import bgImage from '../../assets/images/bg-about-us.jpg';
-import bgImage from '../../assets/images/NBAService/background/background-purple2.jpg';
+import bgImage from '../../assets/images/NBAService/background/BGPages.jpg';
+// import bgImage from '../../assets/images/NBAService/background/background-purple2.jpg';
 import MKBox from '../../components/MKBox';
 import MKTypography from '../../components/MKTypography';
 
@@ -39,6 +40,7 @@ import routes from '../../routes';
 import footerRoutes from '../../footer.routes';
 
 // Images
+import bgImageBuble from '../../assets/images/NBAService/background/buble.png';
 
 function AboutUs() {
   return (
@@ -55,7 +57,7 @@ function AboutUs() {
         light
       />
       <MKBox
-        minHeight="35vh"
+        minHeight="45vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -103,6 +105,12 @@ function AboutUs() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          // background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundImage: `url(${bgImageBuble})`,
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >

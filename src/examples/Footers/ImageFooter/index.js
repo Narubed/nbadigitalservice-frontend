@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -23,21 +22,124 @@ import PropTypes from 'prop-types';
 // @mui material components
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
 
+import bgImage2 from '../../../assets/images/NBAService/background/new-buble.png';
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
 import MKTypography from '../../../components/MKTypography';
-import images from '../../../assets/images/NBAService/footer/BGnba4.jpg';
 
-function ImageFooter() {
+function DefaultFooter({ content }) {
+  const { brand, socials, menus, copyright } = content;
+
   return (
     <MKBox component="footer">
-      <img src={images} />
-      <Grid item xs={12} sx={{ textAlign: 'center', my: 3 }}>
-        NBA Digital Service Center
-      </Grid>
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: 1,
+          mb: 4,
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          // backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundImage: `url(${bgImage2})`,
+          backdropFilter: 'saturate(200%) blur(30px)',
+          boxShadow: ({ boxShadows: { xxl } }) => xxl
+        }}
+      >
+        <Grid container spacing={3} sx={{ m: 'auto' }}>
+          <Grid item xs={12} md={3} sx={{ m: 'auto', mb: 3 }}>
+            <MKBox textAlign="center">
+              <Link to={brand.route}>
+                <MKBox
+                  component="img"
+                  src={brand.image}
+                  alt={brand.name}
+                  maxWidth="6rem"
+                  mb={2}
+                  m="auto"
+                />
+              </Link>
+              <MKTypography variant="h6" mt="18px" textAlign="center">
+                {brand.name}
+              </MKTypography>
+            </MKBox>
+            {/* <MKBox display="flex" alignItems="center" mt={3}>
+              {socials.map(({ icon, link }, key) => (
+                <MKTypography
+                  key={link}
+                  component="a"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="h5"
+                  color="dark"
+                  opacity={0.8}
+                  mr={key === socials.length - 1 ? 0 : 2.5}
+                >
+                  {icon}
+                </MKTypography>
+              ))}
+            </MKBox> */}
+          </Grid>
+          {menus.map(({ name: title, items }) => (
+            <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
+              <MKTypography
+                display="block"
+                variant="button"
+                fontWeight="bold"
+                textTransform="capitalize"
+                mb={1}
+              >
+                {title}
+              </MKTypography>
+              <MKBox component="ul" p={0} m={0} sx={{ listStyle: 'none' }}>
+                {items.map(({ name, route, href }) => (
+                  <MKBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
+                    {href ? (
+                      <MKTypography
+                        component="a"
+                        href={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        variant="button"
+                        fontWeight="regular"
+                        textTransform="capitalize"
+                      >
+                        {name}
+                      </MKTypography>
+                    ) : (
+                      <MKTypography
+                        component={Link}
+                        to={route}
+                        variant="button"
+                        fontWeight="regular"
+                        textTransform="capitalize"
+                      >
+                        {name}
+                      </MKTypography>
+                    )}
+                  </MKBox>
+                ))}
+              </MKBox>
+            </Grid>
+          ))}
+          <Grid item xs={12} sx={{ textAlign: 'center', my: 3 }}>
+            {copyright}
+          </Grid>
+        </Grid>
+      </Card>
     </MKBox>
   );
 }
 
-export default ImageFooter;
+// Typechecking props for the DefaultFooter
+DefaultFooter.propTypes = {
+  content: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.object, PropTypes.array])).isRequired
+};
+
+export default DefaultFooter;

@@ -22,7 +22,7 @@ function Profile() {
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: 'auto', sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">NBA Digital Service</MKTypography>
+                <MKTypography variant="h3">NBA Digital Service Center.</MKTypography>
                 <NavLink to="/pages/authentication/sign-in">
                   <MKButton variant="outlined" color="info" size="small">
                     Login

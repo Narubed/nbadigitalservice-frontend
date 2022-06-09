@@ -5,7 +5,6 @@ import { Fragment, useState, useEffect } from 'react';
 
 // react-router components
 import { Link } from 'react-router-dom';
-
 // prop-types is a library for typechecking of props.
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
@@ -29,7 +28,7 @@ import DefaultNavbarDropdown from './DefaultNavbarDropdown';
 import DefaultNavbarMobile from './DefaultNavbarMobile';
 
 // image
-import logoNBA from '../../../assets/images/NBAService/logo/logonba-.png';
+import logoNBA from '../../../assets/images/NBAService/logo/logonba-service.png';
 // Material Kit 2 React base styles
 import breakpoints from '../../../assets/theme/base/breakpoints';
 
@@ -469,7 +468,11 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           >
             <MKTypography variant="button" fontWeight="bold" color={light ? 'white' : 'dark'}>
               <div style={{ width: '70px' }}>
-                <img src={logoNBA} style={{ width: '100%', height: '100%' }} />
+                <img
+                  className="area-title-navbars"
+                  src={logoNBA}
+                  style={{ width: '100%', height: '100%' }}
+                />
               </div>
             </MKTypography>
           </MKBox>

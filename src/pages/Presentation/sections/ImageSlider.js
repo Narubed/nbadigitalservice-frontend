@@ -3,10 +3,10 @@ import { Carousel } from './lib';
 // import BGnba2 from '../../../assets/images/NBAService/backgroundslider/BGnba2.jpg';
 // import BGnba3 from '../../../assets/images/NBAService/backgroundslider/BGnba3.jpg';
 // import BGnba4 from '../../../assets/images/NBAService/backgroundslider/BGnba4.jpg';
-import BG1 from '../../../assets/images/NBAService/backgroundslider/BG11.png';
-import BG2 from '../../../assets/images/NBAService/backgroundslider/BG22.png';
-import BG3 from '../../../assets/images/NBAService/backgroundslider/BG33.png';
-import BG4 from '../../../assets/images/NBAService/backgroundslider/BG44.png';
+import BG1 from '../../../assets/images/NBAService/backgroundslider/BG1.png';
+import BG2 from '../../../assets/images/NBAService/backgroundslider/BG2.png';
+import BG3 from '../../../assets/images/NBAService/backgroundslider/BG3.png';
+import BG4 from '../../../assets/images/NBAService/backgroundslider/BG4.png';
 
 function App() {
   const data = [
@@ -42,11 +42,9 @@ function App() {
         >
           <Carousel
             data={data}
-            time={8000}
+            time={12000}
             width="100%"
             height="100%"
-            // width="850px"
-            // height="500px"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber
@@ -64,7 +62,6 @@ function App() {
             style={{
               textAlign: 'center',
               maxWidth: '100%',
-              // maxWidth: "850px",
               margin: '10px auto'
             }}
           />

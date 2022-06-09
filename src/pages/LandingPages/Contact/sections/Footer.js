@@ -87,7 +87,8 @@ function Footer() {
               </MKBox>
             </Stack>
             <MKTypography variant="button" opacity={0.8}>
-              Create © <script>document.write(new Date().getFullYear())</script>2022 by aof.
+              Create © <script>document.write(new Date().getFullYear())</script>2022 by Programer
+              NBA Digital Service Center.
             </MKTypography>
           </Grid>
           <Grid item xs={12} lg={6} ml="auto" textAlign={{ xs: 'center', lg: 'right' }}>

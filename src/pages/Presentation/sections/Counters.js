@@ -20,6 +20,7 @@ import EBranch from './cardCounters/E-Branch';
 import ETRANSFER from './cardCounters/E-TRANSFER';
 import FoodExpress from './cardCounters/FoodExpress';
 import NBAExpress from './cardCounters/NBAExpress';
+import FoodDelivery from './cardCounters/FoodDelivery';
 
 // image={require("assets/images/NBAService/NBA2.jpg").default}
 
@@ -28,17 +29,20 @@ function Counters() {
     <MKBox component="section" py={2}>
       <Container>
         <Grid container item xs={12} lg={12} sx={{ mx: 'auto' }}>
-          <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
+          <Grid item xs={12} sm={6} md={6} mt={1} lg={2.4}>
             <EBranch />
           </Grid>
-          <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
+          <Grid item xs={12} sm={6} md={6} mt={1} lg={2.4}>
             <ETRANSFER />
           </Grid>
-          <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
+          <Grid item xs={12} sm={6} md={6} mt={1} lg={2.4}>
             <NBAExpress />
           </Grid>
-          <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
+          <Grid item xs={12} sm={6} md={6} mt={1} lg={2.4}>
             <FoodExpress />
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} mt={1} lg={2.4}>
+            <FoodDelivery />
           </Grid>
         </Grid>
       </Container>

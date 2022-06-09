@@ -19,10 +19,14 @@ import { Link } from 'react-router-dom';
 // prop-types is a library for typechecking of props.
 import PropTypes from 'prop-types';
 
+import './footer.scss';
+
 // @mui material components
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
 
+import bgImage2 from '../../../assets/images/NBAService/background/background-purple2.jpg';
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
 import MKTypography from '../../../components/MKTypography';
@@ -32,8 +36,36 @@ function DefaultFooter({ content }) {
 
   return (
     <MKBox component="footer">
-      <Container>
-        <Grid container spacing={3} sx={{ m: 'auto' }}>
+      {/* <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -9,
+          mb: 4,
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          // backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundImage: `url(${bgImage2})`,
+          backdropFilter: 'saturate(200%) blur(30px)',
+          boxShadow: '2px 5px 5px 5px'
+        }}
+      > */}
+      <div
+        style={{
+          paddingTop: '40px',
+          marginTop: '-80px',
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundImage: `url(${bgImage2})`
+        }}
+      >
+        <Grid container spacing={1} sx={{ m: 'auto' }}>
           <Grid item xs={12} md={3} sx={{ m: 'auto', mb: 3 }}>
             <MKBox textAlign="center">
               <Link to={brand.route}>
@@ -46,27 +78,15 @@ function DefaultFooter({ content }) {
                   m="auto"
                 />
               </Link>
-              <MKTypography variant="h6" mt="18px" textAlign="center">
-                {brand.name}
-              </MKTypography>
-            </MKBox>
-            {/* <MKBox display="flex" alignItems="center" mt={3}>
-              {socials.map(({ icon, link }, key) => (
-                <MKTypography
-                  key={link}
-                  component="a"
-                  href={link}
-                  target="_blank"
-                  rel="noreferrer"
-                  variant="h5"
-                  color="dark"
-                  opacity={0.8}
-                  mr={key === socials.length - 1 ? 0 : 2.5}
-                >
-                  {icon}
+              <div className="content-nbadigitalservice">
+                <MKTypography variant="h6" mt="18px" textAlign="center">
+                  <div style={{ margin: 'auto' }}>
+                    <h2> {brand.name}</h2>
+                    <h2> {brand.name}</h2>
+                  </div>
                 </MKTypography>
-              ))}
-            </MKBox> */}
+              </div>
+            </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
             <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
@@ -77,7 +97,7 @@ function DefaultFooter({ content }) {
                 textTransform="capitalize"
                 mb={1}
               >
-                {title}
+                <div className="area-title-footer">{title}</div>
               </MKTypography>
               <MKBox component="ul" p={0} m={0} sx={{ listStyle: 'none' }}>
                 {items.map(({ name, route, href }) => (
@@ -92,7 +112,7 @@ function DefaultFooter({ content }) {
                         fontWeight="regular"
                         textTransform="capitalize"
                       >
-                        {name}
+                        <div className="text-footer-nbadigital"> {name}</div>
                       </MKTypography>
                     ) : (
                       <MKTypography
@@ -102,7 +122,7 @@ function DefaultFooter({ content }) {
                         fontWeight="regular"
                         textTransform="capitalize"
                       >
-                        {name}
+                        <div className="text-footer-nbadigital"> {name}</div>
                       </MKTypography>
                     )}
                   </MKBox>
@@ -111,10 +131,11 @@ function DefaultFooter({ content }) {
             </Grid>
           ))}
           <Grid item xs={12} sx={{ textAlign: 'center', my: 3 }}>
-            {copyright}
+            <div style={{ color: '#fff', fontSize: '12px' }}>NBA Digital Service © 2022</div>
           </Grid>
         </Grid>
-      </Container>
+        {/* </Card> */}
+      </div>
     </MKBox>
   );
 }

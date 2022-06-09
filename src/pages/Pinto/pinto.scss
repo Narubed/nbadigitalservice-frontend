@@ -1,0 +1,75 @@
+.main-page-pinto {
+  width: 100%;
+  height: auto;
+}
+
+.main-dowload-pinto {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 5px;
+  margin-bottom: 100px;
+}
+
+.card-image-pinto {
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 2px 5px 2px 2px;
+  margin-bottom: 5%;
+  margin-top: 20px;
+}
+.card-pinto img {
+  filter: brightness(100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 1.1s;
+  transition: 1.1s ease-in-out;
+}
+
+.card-pinto:hover img {
+  filter: brightness(130%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .main-page-pinto {
+    width: 100%;
+    height: 450px;
+  }
+
+  .main-dowload-pinto {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-page-pinto {
+    width: 100%;
+    height: 350px;
+  }
+
+  .main-dowload-pinto {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-page-pinto {
+    width: 100%;
+    height: 260px;
+  }
+
+  .main-dowload-pinto {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 5px 5px;
+  }
+}

@@ -41,10 +41,10 @@ export default {
     {
       name: 'Pages',
       items: [
-        { name: 'เช็คเลขพัสดุ', href: '/pages/landing-pages/check-parcel' },
-        { name: 'บริการ', href: '/pages/landing-pages/service' },
-        { name: 'รูปแบบการลงทุน', href: '/pages/landing-pages/investment' },
-        { name: 'คำถามที่พบบ่อย', href: '/pages/landing-pages/blog' }
+        { name: 'เช็คเลขพัสดุ', route: '/pages/landing-pages/check-parcel' },
+        { name: 'บริการ', route: '/pages/landing-pages/service' },
+        { name: 'รูปแบบการลงทุน', route: '/pages/landing-pages/investment' },
+        { name: 'คำถามที่พบบ่อย', route: '/pages/landing-pages/blog' }
       ]
     },
     {
@@ -53,7 +53,7 @@ export default {
         { name: 'E-Branch', href: 'https://e-branch2.nbadigitalworlds.com/' },
         { name: 'E-TRANFER', href: 'https://e-transfer.nbadigitalworlds.com/' },
         { name: 'NBA-Express', href: 'https://nba-express.nbadigitalworlds.com/' },
-        { name: 'Food-Express', href: 'https://foodexpress2.nbadigitalworlds.com/' }
+        { name: 'Food-Express', href: 'https://foodexpress.nbadigitalservice.com' }
       ]
     },
     {
@@ -67,7 +67,7 @@ export default {
     },
     {
       name: 'ติดต่อด่วน',
-      items: [{ name: 'ติดต่อเราโดยตรง', href: '/pages/landing-pages/contact' }]
+      items: [{ name: 'ติดต่อเราโดยตรง', route: '/pages/landing-pages/contact' }]
     }
   ],
   copyright: (

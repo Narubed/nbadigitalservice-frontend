@@ -47,6 +47,7 @@ function Team() {
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        backgroundPosition: 'top',
         backgroundImage: `url(${bgImageBuble})`
       }}
       component="section"
@@ -60,10 +61,10 @@ function Team() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
+            <MKTypography variant="h3" color="purple">
               ตรวจสอบสถานะพัสดุ
             </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
+            <MKTypography variant="body2" color="purple" opacity={0.8}>
               You can select a company for checking the status of your parcel as below.
             </MKTypography>
           </Grid>

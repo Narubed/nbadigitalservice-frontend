@@ -42,15 +42,16 @@ function Author() {
           minHeight="25rem"
           width="100%"
           sx={{
+            background: 'none',
+            backgroundAttachment: 'fixed',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'top',
             backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
               `${linearGradient(
                 rgba(gradients.dark.main, 0),
                 rgba(gradients.dark.state, 0)
-              )}, url(${bgImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            display: 'grid',
-            placeItems: 'center'
+              )}, url(${bgImage})`
           }}
         />
         <Card
@@ -63,6 +64,7 @@ function Author() {
             backgroundAttachment: 'fixed',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
+            backgroundPosition: 'top',
             backgroundImage: `url(${bgImageBuble})`,
             backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
             backdropFilter: 'saturate(200%) blur(30px)',

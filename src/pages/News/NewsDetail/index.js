@@ -39,7 +39,8 @@ import routes from '../../../routes';
 import footerRoutes from '../../../footer.routes';
 
 // Images
-import bgImageBuble from '../../../assets/images/NBAService/background/new-buble.png';
+import bgImageBuble from '../../../assets/images/NBAService/background/buble.png';
+// import bgImageBuble from '../../../assets/images/NBAService/background/new-buble.png';
 
 function AboutUs() {
   return (
@@ -64,10 +65,11 @@ function AboutUs() {
               rgba(gradients.dark.main, 0.6),
               rgba(gradients.dark.state, 0.6)
             )}, url(${bgImage})`,
+          background: 'none',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          display: 'grid',
-          placeItems: 'center'
+          backgroundPosition: 'top'
         }}
       >
         <Container>

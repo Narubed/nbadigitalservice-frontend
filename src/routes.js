@@ -69,6 +69,20 @@ import CompanyStructure from './layouts/pages/company-structure';
 
 // Pinto
 import PintoApp from './layouts/pages/pinto';
+import Messenger from './layouts/pages/pinto/app-detail/messenger';
+import Conditioner from './layouts/pages/pinto/app-detail/conditioner';
+import CutHair from './layouts/pages/pinto/app-detail/cut-hair';
+import Deposit from './layouts/pages/pinto/app-detail/deposit';
+import HealthCenter from './layouts/pages/pinto/app-detail/health-center';
+import Maid from './layouts/pages/pinto/app-detail/maid';
+import Market from './layouts/pages/pinto/app-detail/market';
+import Masseuse from './layouts/pages/pinto/app-detail/masseuse';
+import NbaCar from './layouts/pages/pinto/app-detail/nba-car';
+import Pharmacy from './layouts/pages/pinto/app-detail/pharmacy';
+import Recap from './layouts/pages/pinto/app-detail/recap';
+import Restaurant from './layouts/pages/pinto/app-detail/restaurant';
+import Tutor from './layouts/pages/pinto/app-detail/tutor';
+import WaterElectricity from './layouts/pages/pinto/app-detail/water-electricity';
 
 const routes = [
   {
@@ -87,6 +101,62 @@ const routes = [
     route: '/pages/pinto',
     component: <PintoApp />
   },
+  {
+    route: '/pages/pinto/Messenger',
+    component: <Messenger />
+  },
+  {
+    route: '/pages/pinto/Conditioner',
+    component: <Conditioner />
+  },
+  {
+    route: '/pages/pinto/CutHair',
+    component: <CutHair />
+  },
+  {
+    route: '/pages/pinto/Deposit',
+    component: <Deposit />
+  },
+  {
+    route: '/pages/pinto/HealthCenter',
+    component: <HealthCenter />
+  },
+  {
+    route: '/pages/pinto/Maid',
+    component: <Maid />
+  },
+  {
+    route: '/pages/pinto/Market',
+    component: <Market />
+  },
+  {
+    route: '/pages/pinto/Masseuse',
+    component: <Masseuse />
+  },
+  {
+    route: '/pages/pinto/NbaCar',
+    component: <NbaCar />
+  },
+  {
+    route: '/pages/pinto/Pharmacy',
+    component: <Pharmacy />
+  },
+  {
+    route: '/pages/pinto/Recap',
+    component: <Recap />
+  },
+  {
+    route: '/pages/pinto/Restaurant',
+    component: <Restaurant />
+  },
+  {
+    route: '/pages/pinto/Tutor',
+    component: <Tutor />
+  },
+  {
+    route: '/pages/pinto/WaterElectricity',
+    component: <WaterElectricity />
+  },
 
   {
     name: 'เช็คเลขพัสดุ',
@@ -101,7 +171,7 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: 'Service',
+        // name: 'Service',
         collapse: [
           {
             name: 'บริการของบริษัท',
@@ -129,7 +199,7 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: 'ภูมิภาคต่าง ๆ',
+        // name: 'ภูมิภาคต่าง ๆ',
         collapse: [
           {
             name: 'ภาคเหนือ',
@@ -172,7 +242,7 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: 'Company History',
+        // name: 'Company History',
         collapse: [
           {
             name: 'ประวัติบริษัท',
@@ -201,7 +271,7 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: 'Additional Services',
+        // name: 'Additional Services',
         collapse: [
           {
             name: 'คู่มือออนไลน์',

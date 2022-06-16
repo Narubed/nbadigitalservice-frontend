@@ -130,6 +130,7 @@ function AboutUs() {
           backgroundAttachment: 'fixed',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
+          backgroundPosition: 'top',
           backgroundImage: `url(${bgImageBuble})`,
           // backgroundImage: `url(${bgImage2})`,
           boxShadow: ({ boxShadows: { xxl } }) => xxl

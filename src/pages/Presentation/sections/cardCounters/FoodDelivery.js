@@ -106,11 +106,11 @@ function Information() {
         <RotatingCardBack
           image={require('../../../../assets/images/NBAService/logo/pinto2.png').default}
           title="NBA Delivery"
-          description="App สามัญประจำบ้าน."
+          description="โปรเเกรม สามัญประจำบ้าน."
           action={{
             type: 'internal',
             route: 'https://foodexpress.nbadigitalservice.com/',
-            label: 'เพิ่มเติม'
+            label: 'เว็บไซต์'
           }}
         />
       </RotatingCard>

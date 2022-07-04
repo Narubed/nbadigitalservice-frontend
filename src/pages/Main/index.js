@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Main.css';
 import { Grid, Container } from '@mui/material';
 
-import bgImage from '../../assets/images/NBAService/background/main3.jpg';
-import imageKing from '../../assets/images/NBAService/background/king-01.png';
-import buttonImage1 from '../../assets/images/NBAService/background/button1.png';
-import buttonImage2 from '../../assets/images/NBAService/background/button2.png';
+import bgImage from '../../assets/images/NBAService/main/1.jpg';
+import imageKing from '../../assets/images/NBAService/main/2.jpg';
+import buttonImage1 from '../../assets/images/NBAService/main/4.png';
+import buttonImage2 from '../../assets/images/NBAService/main/3.png';
 
 export default function index() {
   const onSetLocal = () => {
@@ -21,7 +21,8 @@ export default function index() {
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
         height: '100vh',
-        padding: 5
+        padding: 5,
+        backgroundPosition: 'top'
       }}
     >
       <img className="king-image" align="center" src={imageKing} />

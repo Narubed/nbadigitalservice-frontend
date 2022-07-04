@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 import MKBox from '../../../../components/MKBox';
 // import MKBadge from "components/MKBadge";
 import MKTypography from '../../../../components/MKTypography';
-import bgImage from '../../../../assets/images/NBAService/contect/contact2.png';
+import bgImage from '../../../../assets/images/NBAService/contect/contact3.png';
 import MKButton from '../../../../components/MKButton';
 // Presentation page components
 
@@ -37,7 +37,7 @@ function DesignBlocks() {
                   variant="link"
                   startIcon={<Icon icon="noto:telephone" color="red" width="26" height="26" />}
                 >
-                  052-100-8929
+                  052-089-009
                 </MKButton>
               </MKTypography>
               <MKTypography

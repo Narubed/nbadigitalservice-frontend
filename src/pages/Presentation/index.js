@@ -49,6 +49,9 @@ import Logosilde from './sections/Logosilde';
 import NBAExpress from './sections/NBAExpress';
 import Advert from './sections/Advert';
 import Vision from './sections/Vision';
+import NbaDigitalService from './sections/NbaDigitalService';
+import CounterService from './sections/CounterService';
+import PromotionLogo from './sections/PromotionLogo';
 
 // Presentation page components
 import BuiltByDevelopers from './components/BuiltByDevelopers';
@@ -177,6 +180,14 @@ function Presentation() {
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
+
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <NbaDigitalService />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <CounterService />
+        </motion.div>
+
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
           <Accounting />
         </motion.div>
@@ -188,6 +199,9 @@ function Presentation() {
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
           <NBAExpress />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <PromotionLogo />
         </motion.div>
         {/* <Information /> */}
         {/* <DesignBlocks /> */}

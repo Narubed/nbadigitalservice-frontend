@@ -66,7 +66,7 @@ function DefaultFooter({ content }) {
         }}
       >
         <Grid container spacing={1} sx={{ m: 'auto' }}>
-          <Grid item xs={12} md={3} sx={{ m: 'auto', mb: 3 }}>
+          <Grid item xs={12} md={3} sx={{ m: 'auto', mb: 14 }}>
             <MKBox textAlign="center">
               <Link to={brand.route}>
                 <MKBox

@@ -100,13 +100,13 @@ function Information() {
     <Container>
       <RotatingCard>
         <RotatingCardFront
-          image={require('../../../../assets/images/NBAService/logo/nba2.png').default}
+          image={require('../../../../assets/images/NBAService/logo/e-branch.jpg').default}
           icon="touch_app"
           title={<>E-Branch</>}
           description="สำหรับตัวแทนศูนย์ชุมชน."
         />
         <RotatingCardBack
-          image={require('../../../../assets/images/NBAService/logo/nba2.png').default}
+          image={require('../../../../assets/images/NBAService/logo/e-branch.jpg').default}
           title="E-Branch"
           description="เป็นโปรเเกรมสำหรับตัวเเทนศูนย์."
           action={{

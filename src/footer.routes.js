@@ -42,8 +42,11 @@ export default {
       name: 'Pages',
       items: [
         { name: 'เช็คเลขพัสดุ', route: '/pages/landing-pages/check-parcel' },
-        { name: 'บริการ', route: '/pages/landing-pages/service' },
+        { name: 'บริการของเรา', route: '/pages/landing-pages/service' },
         { name: 'รูปแบบการลงทุน', route: '/pages/landing-pages/investment' },
+        { name: 'ประวัติของบริษัท', route: '/pages/history' },
+        { name: 'โครงสร้างบริษัท', route: '/pages/structure' },
+        { name: 'ข่าวสาร', route: '/pages/news' },
         { name: 'คำถามที่พบบ่อย', route: '/pages/landing-pages/blog' }
       ]
     },
@@ -53,7 +56,12 @@ export default {
         { name: 'E-Branch', href: 'https://e-branch2.nbadigitalworlds.com/' },
         { name: 'E-TRANFER', href: 'https://e-transfer.nbadigitalworlds.com/' },
         { name: 'NBA-Express', href: 'https://nba-express.nbadigitalworlds.com/' },
-        { name: 'Food-Express', href: 'https://foodexpress.nbadigitalservice.com' }
+        { name: 'Happy-Point', href: 'https://happy-point.nbadigitalservice.com/' },
+        { name: 'NBA-Platform', href: 'https://nba-platform.nbadigitalservice.com/' },
+        {
+          name: 'Jump Connect',
+          href: 'https://www.jumpconnect.net/member/member_regis_info.php?sp_code=27982&qr_code=1'
+        }
       ]
     },
     {

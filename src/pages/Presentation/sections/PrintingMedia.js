@@ -16,7 +16,7 @@ function PrintingMedia() {
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: 'auto' }}>
           <Grid item xs={12} lg={8} sx={{ ml: 'auto' }}>
             <Image
-              src={require('../../../assets/images/NBAService/printmedia2.png').default}
+              src={require('../../../assets/images/NBAService/mainPages/PrintingMedia.jpg').default}
               rounded={false}
               raised
               alt="Raised Image"

@@ -102,12 +102,12 @@ function Information() {
         <RotatingCardFront
           image={require('../../../../assets/images/NBAService/logo/foodexpress2.png').default}
           icon="touch_app"
-          title={<>FoodExpress</>}
+          title={<>Food Express</>}
           description="สำหรับการสั่งซื้อสินค้า."
         />
         <RotatingCardBack
           image={require('../../../../assets/images/NBAService/logo/foodexpress2.png').default}
-          title="FoodExpress"
+          title="Food Express"
           description="โปรแกรม สั่งซื้อสินค้าหรืออาหาร."
           action={{
             type: 'internal',

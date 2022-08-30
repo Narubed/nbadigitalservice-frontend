@@ -5,8 +5,8 @@ import ImageList from '@mui/material/ImageList';
 import './MainCard.scss';
 // Material Kit 2 React components
 import MKBox from '../../../components/MKBox';
-import bgImage from '../../../assets/images/NBAService/background/Service.png';
-import bgImage2 from '../../../assets/images/NBAService/background/CEO.png';
+import bgImage from '../../../assets/images/NBAService/structure/โครงสร้าง-01.jpg';
+import bgImage2 from '../../../assets/images/NBAService/structure/โครงสร้าง-02.jpg';
 
 function BuiltByDevelopers() {
   // const bgImage =

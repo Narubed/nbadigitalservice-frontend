@@ -102,13 +102,13 @@ function Information() {
         <RotatingCardFront
           image={require('../../../../assets/images/NBAService/logo/nba-platform.png').default}
           icon="touch_app"
-          title={<>FoodExpress</>}
+          title={<>NBA-Platform</>}
           description="สำหรับการสั่งซื้อสินค้า."
         />
         <RotatingCardBack
           image={require('../../../../assets/images/NBAService/logo/nba-platform.png').default}
-          title="FoodExpress"
-          description="โปรแกรม สั่งซื้อสินค้าหรืออาหาร."
+          title="NBA-Platform"
+          description="โปรแกรม platform บนมือถือ."
           action={{
             type: 'internal',
             route: 'https://nba-platform.nbadigitalservice.com/',

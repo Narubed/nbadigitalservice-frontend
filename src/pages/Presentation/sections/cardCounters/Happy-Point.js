@@ -102,13 +102,13 @@ function Information() {
         <RotatingCardFront
           image={require('../../../../assets/images/NBAService/logo/happy-point.png').default}
           icon="touch_app"
-          title={<>FoodExpress</>}
+          title={<>Happy Point</>}
           description="สำหรับการสั่งซื้อสินค้า."
         />
         <RotatingCardBack
           image={require('../../../../assets/images/NBAService/logo/happy-point.png').default}
-          title="FoodExpress"
-          description="โปรแกรม สั่งซื้อสินค้าหรืออาหาร."
+          title="Happy Point"
+          description="โปรแกรม สะสมคะเเนนเพื่อแลกของรางวัล."
           action={{
             type: 'internal',
             route: 'https://happy-point.nbadigitalservice.com/',

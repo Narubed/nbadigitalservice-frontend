@@ -122,12 +122,12 @@ function ContactUs() {
               </Grid>
             </Container>
           </MKBox>
-          <MKBox textAlign="center">
+          {/* <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
               <div>รูปแบบการลงทุนสำหรับ ผู้บริหารศูนย์</div>
             </MKTypography>
-          </MKBox>
-          <MKBox component="section" py={3}>
+          </MKBox> */}
+          {/* <MKBox component="section" py={3}>
             <Container>
               <Grid container item xs={12} lg={12} sx={{ mx: 'auto', pr: '1%', pl: '1%' }}>
                 <Grid
@@ -156,7 +156,7 @@ function ContactUs() {
                 </Grid>
               </Grid>
             </Container>
-          </MKBox>
+          </MKBox> */}
         </Grid>
       </Card>
       <MKBox pt={6} px={1} mt={6}>

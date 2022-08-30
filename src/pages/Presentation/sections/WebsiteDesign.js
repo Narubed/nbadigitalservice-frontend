@@ -31,7 +31,7 @@ function WebsiteDesign() {
           </Grid>
           <Grid item xs={12} lg={8} sx={{ ml: 'auto' }}>
             <Image
-              src={require('../../../assets/images/NBAService/webdisign.png').default}
+              src={require('../../../assets/images/NBAService/programer.jpg').default}
               rounded={false}
               raised
               alt="Raised Image"

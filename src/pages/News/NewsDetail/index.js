@@ -65,11 +65,10 @@ function AboutUs() {
               rgba(gradients.dark.main, 0.6),
               rgba(gradients.dark.state, 0.6)
             )}, url(${bgImage})`,
-          background: 'none',
-          backgroundAttachment: 'fixed',
-          backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundPosition: 'top'
+          backgroundPosition: 'center',
+          display: 'grid',
+          placeItems: 'center'
         }}
       >
         <Container>

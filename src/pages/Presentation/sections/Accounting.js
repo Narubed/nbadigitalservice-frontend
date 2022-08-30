@@ -31,7 +31,7 @@ function Accounting() {
           </Grid>
           <Grid item xs={12} lg={8} sx={{ ml: 'auto' }}>
             <Image
-              src={require('../../../assets/images/NBAService/Accounting2.png').default}
+              src={require('../../../assets/images/NBAService/mainPages/Accounting.jpg').default}
               rounded={false}
               raised
               alt="Raised Image"

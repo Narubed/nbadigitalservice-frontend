@@ -58,7 +58,29 @@ function DesignBlocks() {
                   ไดร์เวอร์ Xprinter(Label)
                 </MKTypography>
                 <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                  ส่วนเหลือในการดาวน์โหลดไดรเวอร์เครื่องพิมพ์ฉลาก
+                  ส่วนช่วยเหลือในการดาวน์โหลดไดรเวอร์เครื่องพิมพ์ฉลาก
+                </MKTypography>
+              </Card>
+            </a>
+            <br />
+            <a className="active" href="#4">
+              <Card>
+                <MKTypography variant="h4" fontWeight="bold" mb={1}>
+                  ไดร์เวอร์ Xprinter(Receipt)
+                </MKTypography>
+                <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                  ส่วนช่วยเหลือในการดาวน์โหลดไดรเวอร์เครื่องพิมพ์ใบเสร็จขนาดเล็ก
+                </MKTypography>
+              </Card>
+            </a>
+            <br />
+            <a className="active" href="#5">
+              <Card>
+                <MKTypography variant="h4" fontWeight="bold" mb={1}>
+                  Google Drive
+                </MKTypography>
+                <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                  เป็นส่วนที่เก็บไดฟ์เวอร์ทั้งหมดในกรณีที่ลูกค้าโหลดจากเว็บไซต์เองไม่ได้
                 </MKTypography>
               </Card>
             </a>
@@ -78,9 +100,8 @@ function DesignBlocks() {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    สามารถคลิ๊กเพื่อดาวน์โหลด และศึกษาการติดตั้งได้ด้วยตัวเอง
                     <br />
-                    <Link to="./คู่มือการติดตั้งระบบด้วยตนเอง.pdf" target="_blank" download>
+                    <a href="https://drive.google.com/drive/folders/12W2bJj438YsL9X27WgXaKTHwgbY-cFoK?usp=sharing">
                       <Button
                         color="purple"
                         buttonType="outline"
@@ -90,9 +111,9 @@ function DesignBlocks() {
                         iconOnly={false}
                         ripple="dark"
                       >
-                        Download
+                        ไปยังไดรเวอร์ที่ทำการเก็บไฟล์
                       </Button>
-                    </Link>
+                    </a>
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -116,7 +137,7 @@ function DesignBlocks() {
                         ทั้งที่สำนักงานหรือที่บ้าน
                       </p>
                       <br />
-                      <a href="https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe">
+                      <a href="https://drive.google.com/file/d/1j8r5SA-5tdHoe2LHPINRWoYDYwjwByzy/view?usp=sharing">
                         <Button
                           color="purple"
                           buttonType="outline"
@@ -490,6 +511,102 @@ function DesignBlocks() {
                           ripple="dark"
                         >
                           Download
+                        </Button>
+                      </a>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              </section>
+              <section id="4">
+                <br />
+                ไดรเวอร์เครื่องใบเสร็จ Xprinter (Receipt)
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <Typography>ไดรเวอร์เครื่องพิมพ์ใบเสร็จ (Receipt) Windows</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <p className="text-Kanit">
+                        สามารถคลิ๊กเพื่อดาวน์โหลดและติดตั้งได้ทันที สำหรับ ผู้ที่ใช้ Windows
+                      </p>
+                      <br />
+                      <a href="https://www.xprintertech.com/58-76-80mm-driver">
+                        <Button
+                          color="purple"
+                          buttonType="outline"
+                          size="regular"
+                          rounded={false}
+                          block={false}
+                          iconOnly={false}
+                          ripple="dark"
+                        >
+                          Download
+                        </Button>
+                      </a>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <Typography>ไดรเวอร์เครื่องพิมพ์ใบเสร็จ (Receipt) Mac</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <p className="text-Kanit">
+                        สามารถคลิ๊กเพื่อดาวน์โหลดและติดตั้งได้ทันที สำหรับ ผู้ที่ใช้ Mac
+                      </p>
+                      <br />
+                      <a href="https://www.xprintertech.com/receipt-printer-mac">
+                        <Button
+                          color="purple"
+                          buttonType="outline"
+                          size="regular"
+                          rounded={false}
+                          block={false}
+                          iconOnly={false}
+                          ripple="dark"
+                        >
+                          Download
+                        </Button>
+                      </a>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              </section>
+
+              <section id="5">
+                <br />
+                Google Drive
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <Typography>ไปยังไดรเวอร์ที่ทำการเก็บไฟล์ Driver</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <br />
+                      <a href="https://drive.google.com/drive/folders/12W2bJj438YsL9X27WgXaKTHwgbY-cFoK?usp=sharing">
+                        <Button
+                          color="purple"
+                          buttonType="outline"
+                          size="regular"
+                          rounded={false}
+                          block={false}
+                          iconOnly={false}
+                          ripple="dark"
+                        >
+                          ไปยังไดรเวอร์ที่ทำการเก็บไฟล์
                         </Button>
                       </a>
                     </Typography>

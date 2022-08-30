@@ -11,8 +11,12 @@ import SignIn from './layouts/pages/authentication/sign-in';
 import CheckParcel from './layouts/pages/landing-pages/check-parcel';
 import Service from './layouts/pages/landing-pages/service';
 import Investment from './layouts/pages/landing-pages/investment';
+import InvestmentPlatform from './layouts/pages/landing-pages/platforminvestment';
+
 import Blog from './layouts/pages/landing-pages/blog';
 import Contact from './layouts/pages/landing-pages/contact';
+
+import AreaZone from './layouts/pages/AreaZone';
 
 // Shipping Company
 import ShippingCompany from './layouts/pages/shipping-company';
@@ -184,9 +188,20 @@ const routes = [
             component: <ShippingCompany />
           },
           {
-            name: 'รูปแบบการลงทุน',
+            name: 'รูปแบบการลงทุน (ทั่วไป)',
             route: '/pages/landing-pages/investment',
             component: <Investment />
+          },
+          {
+            name: 'รูปแบบการลงทุน (platform)',
+            route: '/pages/landing-pages/InvestmentPlatform',
+            component: <InvestmentPlatform />
+          },
+
+          {
+            name: 'การแบ่งเขตพื้นที่',
+            route: '/pages/area-zone',
+            component: <AreaZone />
           }
         ]
       }

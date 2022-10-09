@@ -23,7 +23,6 @@ import NBAExpress from './cardCounters/NBAExpress';
 import FoodDelivery from './cardCounters/FoodDelivery';
 import HappyPoint from './cardCounters/Happy-Point';
 import NBAPlatform from './cardCounters/NBA-Platform';
-import JumpConnect from './cardCounters/NBAJump';
 // image={require("assets/images/NBAService/NBA2.jpg").default}
 
 function Counters() {
@@ -51,9 +50,6 @@ function Counters() {
           </Grid>
           <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
             <NBAPlatform />
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} mt={1} lg={3}>
-            <JumpConnect />
           </Grid>
         </Grid>
       </Container>

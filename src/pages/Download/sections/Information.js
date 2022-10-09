@@ -470,7 +470,7 @@ function DesignBlocks() {
                         สามารถคลิ๊กเพื่อดาวน์โหลดและติดตั้งได้ทันที สำหรับ ผู้ที่ใช้ Windows
                       </p>
                       <br />
-                      <a href="https://www.xprintertech.com/receipt-printer-linux">
+                      <a href="https://www.xprintertech.com/label-driver">
                         <Button
                           color="purple"
                           buttonType="outline"

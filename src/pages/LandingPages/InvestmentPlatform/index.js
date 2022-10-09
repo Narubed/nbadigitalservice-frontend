@@ -28,6 +28,7 @@ import PlatformPrice from '../../../assets/images/NBAService/investment/Platform
 import bgImageBuble from '../../../assets/images/NBAService/background/buble.png';
 // image
 import NBAshop4 from '../../../assets/images/NBAService/nbashop4.png';
+import CardPlatForm from './companents/CardPlatForm';
 
 function ContactUs() {
   return (
@@ -75,7 +76,8 @@ function ContactUs() {
           <br />
           <br />
           <br />
-          <MKBox textAlign="center">
+          <CardPlatForm />
+          {/* <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
               <div>รูปแบบการลงทุนสำหรับ NBA PLATFORM</div>
             </MKTypography>
@@ -90,7 +92,7 @@ function ContactUs() {
                 </Grid>
               </Grid>
             </Container>
-          </MKBox>
+          </MKBox> */}
         </Grid>
       </Card>
       <MKBox pt={6} px={1} mt={6}>

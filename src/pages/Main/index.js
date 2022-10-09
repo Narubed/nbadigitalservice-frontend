@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Main.css';
 import { Grid, Container } from '@mui/material';
 
-import bgImage from '../../assets/images/NBAService/main/king1.png';
-import imageKing from '../../assets/images/NBAService/main/king2.png';
-import buttonImage1 from '../../assets/images/NBAService/main/king33.png';
-import buttonImage2 from '../../assets/images/NBAService/main/king44.png';
+import bgImage from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-1920X1080.png';
+import imageKing from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-1200x1200.png';
+import buttonImage1 from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-ปุ่ม-NBA-Platform.png';
+import buttonImage2 from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-ปุ่ม-NBA-DigitalWorld.png';
 
 export default function index() {
   const onSetLocal = () => {
@@ -35,7 +35,8 @@ export default function index() {
         <Grid container item xs={12} lg={12} sx={{ mx: 'auto' }}>
           <Grid item xs={12} lg={6}>
             {/* <Link to="/pages/landing-pages/contact"> */}
-            <Link to="/">
+            {/* <Link to="https://nba-platform.nbadigitalservice.com/"> */}
+            <a href="https://nba-platform.nbadigitalservice.com/">
               <input
                 className="button-main-rigth"
                 type="image"
@@ -43,7 +44,8 @@ export default function index() {
                 src={buttonImage1}
                 onClick={() => onSetLocal()}
               />
-            </Link>
+            </a>
+            {/* </Link> */}
           </Grid>
           <Grid item xs={12} lg={6}>
             <Link to="/">

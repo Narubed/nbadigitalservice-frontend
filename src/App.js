@@ -44,7 +44,7 @@ export default function App() {
 
   const token = sessionStorage.getItem('token');
   const main = sessionStorage.getItem('main');
-  const submain = sessionStorage.getItem('submain');
+  // const submain = sessionStorage.getItem('submain');
   // const newRoutes = token === null ? routes : routesadmin;
   // console.log(token);
   if (token) {
@@ -75,20 +75,20 @@ export default function App() {
       </ThemeProvider>
     );
   }
-  if (!submain) {
-    return (
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Routes>
-          {/* {token && getRoutes(routesadmin)}
-        <Route path="/" element={<Admin />} /> */}
-          {getRoutes(routesmain)}
-          <Route path="/" element={<SubMain />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </ThemeProvider>
-    );
-  }
+  // if (!submain) {
+  //   return (
+  //     <ThemeProvider theme={theme}>
+  //       <CssBaseline />
+  //       <Routes>
+  //         {/* {token && getRoutes(routesadmin)}
+  //       <Route path="/" element={<Admin />} /> */}
+  //         {getRoutes(routesmain)}
+  //         <Route path="/" element={<SubMain />} />
+  //         <Route path="*" element={<Navigate to="/" />} />
+  //       </Routes>
+  //     </ThemeProvider>
+  //   );
+  // }
 
   return (
     <ThemeProvider theme={theme}>

@@ -20,6 +20,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
+
 import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion/dist/framer-motion';
 import Image from '@material-tailwind/react/Image';
@@ -176,6 +177,11 @@ function Presentation() {
           allowtransparency="true"
           allowFullScreen="true"
         /> */}
+        <div className="background-effect-wrapper">
+          <div className="background-effect kenBurnsToRight">
+            <div className="particle-effect snowfall" />
+          </div>
+        </div>
         <Counters />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />

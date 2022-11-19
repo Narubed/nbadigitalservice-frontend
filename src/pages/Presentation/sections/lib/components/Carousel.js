@@ -164,15 +164,28 @@ function Carousel({
                     {index + 1} / {data.length}
                   </div>
                 )}
-                <img
-                  src={item.image}
-                  alt={item.caption}
-                  className="carousel-image"
-                  style={{
-                    borderRadius: radius,
-                    objectFit: slideImageFit || 'cover'
-                  }}
-                />
+                <a
+                  href={item.link ? item.link : '#'}
+                  target={item.link ? '_blank' : ''}
+                  rel="noreferrer"
+                >
+                  <div className="background-effect-wrapper">
+                    <div className="background-effect kenBurnsToRight">
+                      <div className={`particle-effect ${index % 2 ? 'snowfall' : 'sparkle'}`} />
+                    </div>
+                  </div>
+
+                  <img
+                    src={item.image}
+                    alt={item.caption}
+                    className="carousel-image"
+                    style={{
+                      borderRadius: radius,
+                      objectFit: slideImageFit || 'cover'
+                    }}
+                  />
+                </a>
+
                 {isPaused && (
                   <div
                     className="pause-icon pause"

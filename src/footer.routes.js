@@ -9,13 +9,13 @@ import { Icon } from '@iconify/react';
 import MKTypography from './components/MKTypography';
 
 // Images
-import logoCT from './assets/images/NBAService/logoservice.png';
+import logoCT from './assets/images/NBAService/nbaonestopshop.png';
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: 'NBA Digital Service',
+    name: 'NBA Digital Worlds',
     image: logoCT,
     route: '/'
   },
@@ -57,11 +57,7 @@ export default {
         { name: 'E-TRANFER', href: 'https://e-transfer.nbadigitalworlds.com/' },
         { name: 'NBA-Express', href: 'https://nba-express.nbadigitalworlds.com/' },
         { name: 'Happy-Point', href: 'https://happy-point.nbadigitalservice.com/' },
-        { name: 'NBA-Platform', href: 'https://nba-platform.nbadigitalservice.com/' },
-        {
-          name: 'Jump Connect',
-          href: 'https://www.jumpconnect.net/member/member_regis_info.php?sp_code=27982&qr_code=1'
-        }
+        { name: 'NBA-Platform', href: 'https://nba-platform.nbadigitalservice.com/' }
       ]
     },
     {

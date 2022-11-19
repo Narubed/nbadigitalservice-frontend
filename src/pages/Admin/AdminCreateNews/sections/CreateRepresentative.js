@@ -13,9 +13,9 @@ import draftToHtml from 'draftjs-to-html';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import convert from 'htmr';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+// import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import Button from '@material-tailwind/react/Button';
 import Input from '@material-tailwind/react/Input';
 // material
@@ -143,7 +143,7 @@ export default function AdminCreateProductApp() {
                   onChange={(e) => setSubTitleNews(e.target.value)}
                 />
               </Stack> */}
-              <Grid item xs={12} lg={6} pr="65%">
+              {/* <Grid item xs={12} lg={6} pr="65%">
                 <LocalizationProvider dateAdapter={AdapterDateFns}>
                   <Stack spacing={3}>
                     <MobileDatePicker
@@ -157,7 +157,7 @@ export default function AdminCreateProductApp() {
                     />
                   </Stack>
                 </LocalizationProvider>
-              </Grid>
+              </Grid> */}
               <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                 <TextField
                   type="file"
@@ -175,7 +175,6 @@ export default function AdminCreateProductApp() {
                   src={filepreview}
                   alt="UploadImage"
                   width="50%"
-                  higth="50%"
                   style={{ margin: 'auto' }}
                 />
               ) : null}

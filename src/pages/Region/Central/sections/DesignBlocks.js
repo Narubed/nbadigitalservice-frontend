@@ -33,7 +33,7 @@ function DesignBlocks() {
       </Grid>
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
-          {items.map(({ image, name, count, route, pro }) => (
+          {items.map(({ image, name, count, pro }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
               <ExampleCard image={image} name={name} count={count} pro={pro} />
             </Grid>

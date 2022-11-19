@@ -28,7 +28,7 @@ import DefaultNavbarDropdown from './DefaultNavbarDropdown';
 import DefaultNavbarMobile from './DefaultNavbarMobile';
 
 // image
-import logoNBA from '../../../assets/images/NBAService/logo/logonba-service.png';
+import logoNBA from '../../../assets/images/NBAService/logo/logonba-worlds.png';
 // Material Kit 2 React base styles
 import breakpoints from '../../../assets/theme/base/breakpoints';
 

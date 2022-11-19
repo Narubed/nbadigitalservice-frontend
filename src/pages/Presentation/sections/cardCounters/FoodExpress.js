@@ -43,7 +43,7 @@ function RotatingCardBack({ color, image, title, description, action }) {
       zIndex={5}
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba } }) =>
-          `${linearGradient(rgba(purple[500], 0.85), rgba(purple[500], 0.85))}, url(${image})`,
+          `${linearGradient(rgba(purple[800], 0.85), rgba(purple[800], 0.85))}, url(${image})`,
         backgroundSize: 'cover',
         backfaceVisibility: 'hidden',
         transform: 'rotateY(180deg)'
@@ -96,17 +96,20 @@ function RotatingCardBack({ color, image, title, description, action }) {
 
 function Information() {
   return (
-    // <MKBox component="section" py={6} my={6}>
-    <Container>
+    <MKBox sx={{ pr: 1, pl: 1 }}>
       <RotatingCard>
         <RotatingCardFront
-          image={require('../../../../assets/images/NBAService/logo/foodexpress2.png').default}
+          image={
+            require('../../../../assets/images/NBAService/logo/logoWeb/FoodExpress.png').default
+          }
           icon="touch_app"
           title={<>Food Express</>}
           description="สำหรับการสั่งซื้อสินค้า."
         />
         <RotatingCardBack
-          image={require('../../../../assets/images/NBAService/logo/foodexpress2.png').default}
+          image={
+            require('../../../../assets/images/NBAService/logo/logoWeb/FoodExpress.png').default
+          }
           title="Food Express"
           description="โปรแกรม สั่งซื้อสินค้าหรืออาหาร."
           action={{
@@ -116,8 +119,7 @@ function Information() {
           }}
         />
       </RotatingCard>
-    </Container>
-    // </MKBox>
+    </MKBox>
   );
 }
 

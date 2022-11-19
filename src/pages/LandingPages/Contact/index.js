@@ -71,6 +71,11 @@ function Author() {
             boxShadow: ({ boxShadows: { xxl } }) => xxl
           }}
         >
+          <div className="background-effect-wrapper">
+            <div className="background-effect kenBurnsToRight">
+              <div className="particle-effect snowfall" />
+            </div>
+          </div>
           <Profile />
           <ContactBox />
           <iframe
@@ -80,7 +85,7 @@ function Author() {
             // style="border:0;"
             allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
           />
         </Card>
         {/* <Footer /> */}

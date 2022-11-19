@@ -43,7 +43,7 @@ function RotatingCardBack({ color, image, title, description, action }) {
       zIndex={5}
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba } }) =>
-          `${linearGradient(rgba(purple[500], 0.85), rgba(purple[500], 0.85))}, url(${image})`,
+          `${linearGradient(rgba(purple[800], 0.85), rgba(purple[800], 0.85))}, url(${image})`,
         backgroundSize: 'cover',
         backfaceVisibility: 'hidden',
         transform: 'rotateY(180deg)'
@@ -96,17 +96,16 @@ function RotatingCardBack({ color, image, title, description, action }) {
 
 function Information() {
   return (
-    // <MKBox component="section" py={6} my={6}>
-    <Container>
+    <MKBox sx={{ pr: 1, pl: 1 }}>
       <RotatingCard>
         <RotatingCardFront
-          image={require('../../../../assets/images/NBAService/logo/tranfer3.png').default}
+          image={require('../../../../assets/images/NBAService/logo/logoWeb/Transfer.png').default}
           icon="touch_app"
           title={<>E-TRANSFER</>}
           description="สำหรับข้อมูลบัญชี."
         />
         <RotatingCardBack
-          image={require('../../../../assets/images/NBAService/logo/tranfer3.png').default}
+          image={require('../../../../assets/images/NBAService/logo/logoWeb/Transfer.png').default}
           title="E-TRANSFER"
           description="โปรแกรมบริหารจัดการ ระบบบัญชี."
           action={{
@@ -116,8 +115,7 @@ function Information() {
           }}
         />
       </RotatingCard>
-    </Container>
-    // </MKBox>
+    </MKBox>
   );
 }
 

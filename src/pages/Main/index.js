@@ -5,10 +5,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Main.css';
 import { Grid, Container } from '@mui/material';
 
-import bgImage from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-1920X1080.png';
-import imageKing from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-1200x1200.png';
-import buttonImage1 from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-ปุ่ม-NBA-Platform.png';
-import buttonImage2 from '../../assets/images/NBAService/main/วันพระราชสมภพสมเด็จย่า-ปุ่ม-NBA-DigitalWorld.png';
+import bgImage from '../../assets/images/NBAService/main/ปียมหาราชปก.png';
+import imageKing from '../../assets/images/NBAService/main/ปียมหาราช.png';
+import buttonImage1 from '../../assets/images/NBAService/main/ปียมหาราชปุ่ม2.png';
+import buttonImage2 from '../../assets/images/NBAService/main/ปียมหาราชปุ่ม1.png';
+// import bgImage from '../../assets/images/NBAService/main/สถิตในดวงใจตราบนิจนิรันดร์-04.png';
+// import imageKing from '../../assets/images/NBAService/main/สถิตในดวงใจตราบนิจนิรันดร์-01.png';
+// import buttonImage1 from '../../assets/images/NBAService/main/สถิตในดวงใจตราบนิจนิรันดร์-02.png';
+// import buttonImage2 from '../../assets/images/NBAService/main/สถิตในดวงใจตราบนิจนิรันดร์-03.png';
 
 export default function index() {
   const onSetLocal = () => {

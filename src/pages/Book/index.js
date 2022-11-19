@@ -100,7 +100,7 @@ function AboutUs() {
           seamless="seamless"
           scrolling="no"
           frameBorder="0"
-          allowtransparency="true"
+          // allowtransparency="true"
           allowFullScreen="true"
         />
         {/* <Featuring /> */}

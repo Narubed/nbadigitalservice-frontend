@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 import MKBox from '../../../../components/MKBox';
 // import MKBadge from "components/MKBadge";
 import MKTypography from '../../../../components/MKTypography';
-import bgImage from '../../../../assets/images/NBAService/contect/contact3.png';
+import bgImage from '../../../../assets/images/NBAService/contect/contact4.png';
 import MKButton from '../../../../components/MKButton';
 // Presentation page components
 

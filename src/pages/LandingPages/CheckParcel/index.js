@@ -56,6 +56,11 @@ function AboutUs() {
         transparent
         light
       />
+      <div className="background-effect-wrapper">
+        <div className="background-effect kenBurnsToRight">
+          <div className="particle-effect snowfall" />
+        </div>
+      </div>
       <MKBox
         minHeight="45vh"
         width="100%"

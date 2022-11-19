@@ -9,9 +9,15 @@ import BG3 from '../../../assets/images/NBAService/backgroundslider/main3.png';
 import BG4 from '../../../assets/images/NBAService/backgroundslider/main4.png';
 import BG5 from '../../../assets/images/NBAService/backgroundslider/main5.jpg';
 import BG6 from '../../../assets/images/NBAService/backgroundslider/main6.jpg';
+import BG7 from '../../../assets/images/NBAService/backgroundslider/main7.png';
 
 function App() {
   const data = [
+    {
+      image: BG7,
+      link: 'https://dealer.nbadigitalservice.com/'
+    },
+
     {
       image: BG4
     },
@@ -45,7 +51,8 @@ function App() {
       <div style={{ textAlign: 'center' }}>
         <div
           style={{
-            padding: '0 10px'
+            padding: '0 10px',
+            cursor: 'pointer'
           }}
         >
           <Carousel

@@ -50,6 +50,11 @@ const Login = () => {
 
   return (
     <>
+      <div className="background-effect-wrapper">
+        <div className="background-effect kenBurnsToRight">
+          <div className="particle-effect snowfall" />
+        </div>
+      </div>
       <MKBox variant="gradient" bgColor="dark" shadow="sm" py={0.25}>
         <DefaultNavbar
           routes={routes}

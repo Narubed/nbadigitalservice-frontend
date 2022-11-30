@@ -10,6 +10,7 @@ import AdminNews from './layouts/pages/admin/admin-news';
 import AdminCreateNews from './layouts/pages/admin/admin-create-news';
 import AdminAdvert from './layouts/pages/admin/admin-advert';
 import AdminCountry from './layouts/pages/admin/admin-country';
+import AdminFirstPage from './layouts/pages/admin/admin-first-page';
 
 const routes = [
   {
@@ -38,6 +39,12 @@ const routes = [
   //   route: '/pages/admin/admin-AdminCountry',
   //   component: <AdminCountry />
   // },
+  {
+    name: 'จัดการหน้าหลัก',
+    icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
+    route: '/pages/admin/first-page',
+    component: <AdminFirstPage />
+  },
   {
     name: 'โฆษณา',
     icon: <Icon icon="fluent:arrow-sync-checkmark-20-filled" />,
